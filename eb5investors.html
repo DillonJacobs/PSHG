@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style></style>
+</head>
+<script src="js/jquery-1.12.0.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="js/scripts.js"> </script>
+
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.biggestdiv').fadeIn("slow");
+  alert("Hello! I am an alert box!!");
+});
+$(".fancybox-thumb").fancybox({
+  prevEffect	: 'fade',
+  nextEffect	: 'fade',
+  arrows    : false,
+  helpers	: {
+  title	: {
+  type: 'outside',
+},
+  thumbs	: {
+  width	: 50,
+  height	: 50
+  alert("Hello! I am an alert box!!");
+}},
+});
+</script>
+
+<script>
+$('.maps').click(function () {
+    $('.maps iframe').css("pointer-events", "auto");
+    alert("Hello! I am an alert box!!");
+});
+</script>
+<title> PUGET SOUND HOSPITALITY GROUP</title>
+
+<div id="biggestdiv">
+<a href="home.html"><img class="logo" src="PSH.svg"></a>
+<ul id="menu">
+  <li><a href="HOTELS.html"> HOTELS</a></li>
+  <li><a href="modstudios.html"> EXTENDED STAY</a></li>
+  <li><a href="tavern12.html"> TAVERN 12</a></li>
+  <li><a href="ABOUT.html"> ABOUT</a></li>
+</ul>
+
+
+
+<span id="contact">
+  <h3 id="mediumtext">CONTACT</h3>
+  <p id="smalltext"> PHONE:206 123 4567</br>
+      EMAIL: INFO@PSHG.COM</p>
+</span>
+
+<span id="address">
+  <h3 id="mediumtext">ADDRESS</h3>
+  <p id="smalltext"> 1234 12 AVE NE </br>
+      SEATTLE, WA 9804 </p>
+</span>
+
+
+<div id="footer">
+<div id="lowermenudiv">
+<ul id="lowermenu" class="">
+<li> <a href="careers.html"> <h3>CAREERS</a>&nbsp;&nbsp;&nbsp;/</h3> </li>
+<li> <a href="eb5investors.html"> <h3>EB-5 INVESTORS</a></h3> </li>
+</ul>
+</div>
+<HR id="footerhr" class="widthcap">
+<p id="footertxt" class="widthcap">
+  <span id="footertxt">C. PUGET SOUND HOSPITALITY GROUP 2015</br>SITE BY NEARABOUT CREATIVE</span>
+</p>
+</div>
+
+</div>
+</div>

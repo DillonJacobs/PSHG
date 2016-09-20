@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+
+  #one {
+      background-color:#3fa9f5;
+  }
+  #two {
+      background-color:#7ac943;
+      display:none;
+  }
+  #three {
+      background-color:#662d91;
+      display:none;
+  }
+  </style>
+  </head>
+<script src="js/jquery-1.12.0.js"></script>
+<script>
+$( document ).ready(function() {
+    console.log( "ready!" );
+var navLinks = $('.navLink');
+var contentElements = $('.content');
+
+navLinks.on('click', function (e) {
+
+    //set menu
+    navLinks.removeClass('selected');
+
+    $(e.currentTarget).addClass('selected');
+    var navId = $(e.currentTarget).attr('id');
+
+    //set content
+    contentElements.hide();
+    switch (navId) {
+        case "menu1":
+            $('#one').show();
+            break;
+        case "menu2":
+            $('#two').show();
+            break;
+        case "menu3":
+            $('#three').show();
+            break;
+    }
+});
+});
+</script>
+
+
+
+<body>
+  <div class="menu">
+    <ul class="navList">
+        <li id="menu1" class="navLink selected"><a>Menu 1</a></li>
+        <li id="menu2" class="navLink"><a>Menu 2</a> </li>
+        <li id="menu3" class="navLink"><a>Menu 3</a></li>
+    </ul>
+</div>
+<div class="container">
+    <div id="one" class="content">Content 1</div>
+    <div id="two" class="content">Content 2</div>
+    <div id="three" class="content">Content 3</div>
+</div>
+
+</body>
+</html>

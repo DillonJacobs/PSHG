@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="js/jquery-1.12.0.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/mobilestyles.css">
+<script type="text/javascript" src="js/scripts.js"> </script>
+<link rel="stylesheet" href="css/unslider.css">
+
+<script>
+  jQuery(document).ready(function($) {
+    $('.my-slider').unslider({
+      autoplay: true,
+      arrows: false,
+      animation: 'horizontal',
+      delay: 8000,
+      nav: false
+    });
+  });
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var onMapMouseleaveHandler = function (event) {
+    var that = $(this);
+
+    that.on('click', onMapClickHandler);
+    that.off('mouseleave', onMapMouseleaveHandler);
+    that.find('iframe').css("pointer-events", "none");
+  }
+
+  var onMapClickHandler = function (event) {
+    var that = $(this);
+
+    // Disable the click handler until the user leaves the map area
+    that.off('click', onMapClickHandler);
+
+    // Enable scrolling zoom
+    that.find('iframe').css("pointer-events", "auto");
+
+    // Handle the mouse leave event
+    that.on('mouseleave', onMapMouseleaveHandler);
+  }
+
+  // Enable map zooming with mouse scroll when the user clicks the map
+  $('.maps.embed-container').on('click', onMapClickHandler);
+  });
+  </script>
+  <body>
+<title> PUGET SOUND HOSPITALITY GROUP</title>
+
+<a href="home.html"><img class="logo" src="...........img/PSH.svg"></a>
+<ul id="menu">
+  <li><a href="HOTELS.html"> HOTELS</a></li>
+  <li><a href="modstudios.html"> EXTENDED STAY</a></li>
+  <li><a href="tavern12.html"> TAVERN 12</a></li>
+  <li><a href="ABOUT.html"> ABOUT</a></li>
+</ul>
+
+<div id="biggestdiv">
+  <div id="toolbar">
+  <div id="active"><p id="activetext"><a id="link" href="hotels.html">HOTELS</a></p>
+  </div><div id="four"><p id="text"><a id="link" href="restraunts.html">EXTENDED STAY</a></p>
+  </div><div id="four"><p id="text"><a id="link" href="restraunts.html">TAVERN 12</a></p>
+  </div><div id="four"><p id="text"><a id="link" href="about.html">ABOUT</a></p>
+  </div>
+</div>
+<div id="homeimage"></div>
+<div id="homeimage"></div>
+<div id="homeimage"></div>
+<div id="homeimage"></div>
+
+
+
+      <div class="my-slider">
+
+        <ul id="slider">
+          <li> <img id="sliderpic" src="img/marriotbellevue/MarriotBellevue00.jpg"> </li>
+          <li> <img id="sliderpic" src="img/marriotbellevue/MarriotBellevue03.jpg"> </li>
+          <li> <img id="sliderpic" src="img/marriotbellevue/MarriotBellevue09.jpg"> </li>
+        </ul>
+<!--
+            <div id="catchphrase-box">
+</div>
+        <h1 id="catchphrase">BE OUR GUEST, <br>
+           LET US DO THE REST</h1>
+-->
+
+</div><div class="fixer">
+<div class="col-85 center top">
+  <h1 class="mission center titlefont gotham bluecolor">WE'RE ON A MISSION</h1>
+  <p class="left gotham bodyfont">It is our passion to provide unmatched service to our guests, create opportunities for our associates and build properites that both can call home. We strive to achieve success by being innovative and taking on the responsibility to exceed expectations.</p>
+<p class="right gotham bodyfont">Our goal is to create environments that inspire connections. Over the next five years we will be expanding our portfolio to include additional national brands as well as corporate housing. 
+</p>
+<p class="right historyleft bluecolor"><a class="bodyfont gotham bluecolor" href="">VIEW OUR HISTORY ></a></p>
+
+</div></div>
+<div class="col-100 center middle">
+
+</div><div class="fixer"><div class="col-85 center bottom">
+  <img class="hotellogo hampton" src="img/logos/hampton.png">
+  <img class="hotellogo starwood" src="img/logos/starwood.png">
+  <img class="hotellogo marriot" src="img/logos/marriot.png">
+  <img class="hotellogo fourpoints" src="img/logos/fourpoints.png">
+</div></div>
+<div id="color">
+  <div id="googlemap" style="
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);">
+
+<div class='content-container  embed-container  maps widthcap'>
+  <iframe style="pointer-events: none; width:100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86094.54670842378!2d-122.22531681923769!3d47.59784983793472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906bcfa3a66041%3A0xbacf5482ead00765!2sBellevue%2C+WA!5e0!3m2!1sen!2sde!4v1459379717228" width="90%" height="325" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</div>
+
+
+<div id="contactaddressdiv" class="center widthcap">
+<span id="contactbox">
+  <h3 class="contactaddresstext">CONTACT</h3>
+  <br>
+  <p class="smalltext"> PHONE:206 123 4567</br>
+      EMAIL: INFO@PSHG.COM</p>
+</span>
+<span id="addressbox">
+  <h3 class="contactaddresstext">ADDRESS</h3>
+  <br>
+  <p class="smalltext"> 1234 12 AVE NE </br>
+      SEATTLE, WA 9804 </p>
+</span>
+</div>
+
+</div>
+<div id="footer">
+<div id="lowermenudiv">
+<ul id="lowermenu" class="">
+<li> <a href="careers.html"> <h3>CAREERS</a>&nbsp;&nbsp;&nbsp;/</h3> </li>
+<li> <a href="eb5investors.html"> <h3>EB-5 INVESTORS</a></h3> </li>
+</ul>
+</div>
+<HR id="footerhr" class="widthcap">
+<p id="footertxt" class="widthcap">
+  <span id="footertxt">C. PUGET SOUND HOSPITALITY GROUP 2015</br>SITE BY NEARABOUT CREATIVE</span>
+</p>
+</div>
+
+</div>
+<script src="js/unslider-min.js"></script>

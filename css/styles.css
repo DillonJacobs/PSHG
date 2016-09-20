@@ -1,0 +1,833 @@
+  
+  .col-33{
+    width:100%;
+    background-color:orange;
+    display:inline-block;
+    height:100vw;
+    display:inline-block;
+        border-style:solid;
+    box-sizing: border-box;
+    position: relative;
+  }
+  @media screen and (min-width: 600px) {
+  .col-33{
+    width:50%;
+    background-color:orange;
+    display:inline-block;
+    height:50vw;
+    display:inline-block;
+        border-style:solid;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+
+a:link {color: #6d6e71;text-decoration: none;}
+a:visited {color: #6d6e71;text-decoration: none;}
+a:hover {color: #000000;}
+a:active {color: #000000;text-decoration: none;}
+#menu a{
+  color:black;
+  -o-transition:.25s;
+ -ms-transition:.25s;
+ -moz-transition:.25s;
+ -webkit-transition:.25s;
+ transition:.25s;
+}
+body{
+  background-size: cover;
+  height:100%;
+  width:100%;
+}
+#lowermenu a{
+
+}
+#menu a:hover{
+  color:#000000;
+}
+div.my-slider.unslider-horizontal{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.fade {
+   opacity: 1;
+   transition: opacity .15s ease-in-out;
+   -moz-transition: opacity .15s ease-in-out;
+   -webkit-transition: opacity .15s ease-in-out;
+   }
+
+   .fade:hover {
+      opacity: 0.65;
+      }
+
+.hamptonseattle{
+  background-image:url("../img/seattle-hampton-thumbnail.jpg")
+}
+.hamptontacoma{
+    background-image:url("../img/hampton-tacoma-thumbnail.jpg")
+}
+
+.marriotbellevue{
+    background-image:url("../img/marriot-courtyard-thumbnail.jpg")
+}
+#mobile{
+  display:none;
+}
+.bodytext{
+    font-family: "Times New Roman";
+    font-size:18px;
+    letter-spacing:1px;
+    line-height: 25px;
+}
+#toolbar{
+  display:none;
+}
+.demo{
+  width:100%;
+  padding-bottom:0px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#mobilemenu{
+  display:none;
+}
+#mobileshit{
+  display:none
+}
+body {
+margin-top: 0px;
+margin-right: auto;
+margin-bottom: 0px;
+margin-left: auto;
+}
+
+#sliderpic{
+position:relative;
+width:100%;
+}
+#catchphrase-box{
+  position:absolute;
+  margin-top:165px;
+width:585px;
+min-width:540px;
+height:130px;
+background-color:#004363;
+opacity: .8;
+right:0;
+}
+h1#catchphrase{
+  min-width:505px;
+  margin-top:185px;
+  position:absolute;
+  opacity:1 !important;
+  color:white;
+  z-index: 200;
+  font-family: gotham;
+  font-size:39px;
+  font-weight:100;
+  letter-spacing: 5px;
+  height:100px;
+  margin-right:29px;
+  right:0;
+}
+
+#smalltext{
+font-family: gotham;
+font-size:12px;
+}
+.mediumtext{
+font-family: gotham;
+font-size:12px;
+font-weight:200;
+}
+#largetext{
+font-family: gotham;
+font-size:18px;
+}
+ul#menu{
+display:table;
+table-layout: fixed;
+max-width: 1250px;
+margin: -55.5px 35px 0px 0px;
+padding: 0;
+float:right;
+font-family: "gotham bold";
+font-size: 14px;
+font-weight:400;
+color: black;
+text-align:left;
+position:relative;
+letter-spacing: 1px;
+}
+ul#menu li{
+list-style-type: none;
+display:table-cell;
+width:auto;
+text-align:center;
+z-index: 1000;
+padding-left:35px;
+padding-right:35px;
+}
+
+ul#lowermenu{
+  height:10px;
+margin: 0px auto;
+list-style: none;
+font-family: gotham;
+font-size:12px;
+letter-spacing: 2px;
+float:right;
+display:table;
+}
+
+ul#lowermenu li{
+float:left;
+width:auto;
+padding-left:10px;
+padding-right:10px;
+}
+ul#lowermenu a{
+color:white;
+-o-transition:.25s;
+-ms-transition:.25s;
+-moz-transition:.25s;
+-webkit-transition:.25s;
+transition:.25s;
+}
+
+ul#lowermenu a:hover{
+color:black;
+}
+
+#biggestdiv{
+width:100%;
+display:block;
+margin-right:auto;
+margin-left:auto;
+position:relative;
+margin-top:90px;
+}
+
+#graybox{
+width:100%;
+background-color: #FFFFFF;
+}
+
+#random-fullscreen-home{
+font-size:30px;
+font-family: "gotham", "ariel";
+}
+#random-fullscreen-home{
+border-style:solid;
+width:100%;
+height:600px;
+margin-top:60px;
+}
+#aboutimg{
+width:100%;
+}
+#leftmenu{
+width:20%;
+height:220px;
+float:left;
+border-style:solid;
+border-width: 0px 4px 0px 0px;
+margin-top:60px;
+margin-left:2%;
+padding-right:20px;
+}
+#leftmenu ul li {
+list-style-type: none;
+font-family:gotham;
+text-align: right;
+font-size:26px;
+line-height: 40px;
+letter-spacing: 3px;
+margin-right:10px;
+}
+#bigabouttext{
+font-family: gotham;
+font-size:48px;
+letter-spacing:6px;
+margin-left:20px;
+margin-bottom:0px;
+height:100px;
+
+font-weight:550;
+letter-spacing: 6px;
+
+}
+#abouttext{
+  padding-left:20px;
+}
+#people{
+margin-top:60px;
+width: 70%;
+height:500px;
+float:right;
+z-index:500;
+}
+#contact{
+display:inline-block;
+}
+#address{
+display:inline-block;
+}
+#footertxt{
+font-size: 9px;
+font-family: gotham;
+color:white;
+text-align:right;
+clear:both;
+letter-spacing: 2px;
+line-height: 24px;
+max-width:1190px;
+margin-left:auto;
+margin-right:auto;
+}
+#footerhr{
+clear:both;
+border-style: none;
+height:1px;
+background-color:white;
+margin-left:auto;
+margin-right:auto;
+background-clip:content-box;
+}
+#contact {
+margin-top:-40px;
+float:left;
+font-family: gotham;
+font-size:12;
+z-index: 10;
+}
+#address{
+float:left;
+font-family: gotham;
+font-size:12;
+}
+iframe#googlemap{
+display:block;
+background-color: transparent;
+margin-left:auto;
+margin-right:auto;
+margin-top:105px;
+}
+
+#contactbox{
+display:inline-block;
+margin-right:30px;
+}
+
+#addressbox{
+display:inline-block;
+}
+
+#contactaddressdiv{
+  padding-bottom:22px;
+height:100px;
+z-index:500;
+color:red;
+display:block;
+}
+.contactaddresstext{
+  margin-top:0px;
+font-family:gotham;
+font-size:12px;
+color:white;
+letter-spacing:2px;
+font-weight: bold;
+letter-spacing:2.5px;
+font-weight: 600;
+position:relative;
+}
+.smalltext{
+margin-top:-10px;
+font-family:gotham;
+font-size:12px;
+color:white;
+letter-spacing:2px;
+line-height: 27px;
+font-weight: light;
+display:inline-block;
+font-weight: 200;
+}
+#mediumtext{}
+#smalltext{}
+
+
+div#footer{
+  background-color:#4D4D4F;
+  background-size: 105% 300PX;
+   background-repeat: no-repeat;
+
+     height:140px;
+  width:100%;
+  clear:both;
+  position:relative;
+  padding-top:28px;
+}
+#one {
+  margin-bottom:100px;
+}
+#two {
+display:none;
+margin-top:50px;
+}
+#three {
+display:none;
+margin-bottom:50px;
+}
+#fourfour{
+display:none;
+margin-bottom:50px;
+}
+.navLink{
+    font-weight:200;
+}
+.navLink:hover {
+font-weight:400;
+}
+.selected {
+font-weight:400;
+}
+.container{
+width:70%;
+float:right;
+margin-right:5%;
+}
+
+.headshot-placeholder{
+width:22vw;
+height:22vw;
+max-width:250px;
+max-height:250px;
+background-color: red;
+border-style:solid;
+display:inline-block;
+}
+
+#aboutpeopletext{
+text-align: left;
+display:inline;
+width:40vw;
+height:auto;
+max-width:400px;
+position:absolute;
+margin-left:20px;
+margin-top:-5px;
+}
+
+
+#paul{
+width:100%;
+border-style:solid;
+}
+
+#eventsheader{
+width:100%;
+height:140px;
+line-height: 100px;
+  background-color:#004363;
+background-size: 105% 105%;
+text-align:center;
+}
+#events{
+font-family: gotham;
+font-weight:100;
+font-size:48px;
+height:100px;
+color:white;
+vertical-align: middle;
+margin-top:0px;
+margin-bottom:0px;
+letter-spacing:6px;
+}
+
+#eventbox{
+margin-top:50px;
+width:90%;
+background-color:#E6E7E8;
+margin-left: auto;
+margin-right: auto;
+position:relative;
+min-height: 315px;
+padding-top: 20px;
+padding-left:20px;
+max-width: 1000px;
+}
+#imgplaceholder{
+height:230px;
+width:210px;
+background-color:black;
+display:inline-block;
+position:absolute;
+}
+#eventplaceholder{
+height:300px;
+width:380px;
+background-color:black;
+display:inline-block;
+position:absolute;
+}
+
+#eventtextdiv{
+width: calc(100% - 400px);
+height:auto;
+display:inline-block;
+margin-left:395px;
+padding-top:0px;
+padding-right:10px;
+margin-top:0px;
+}
+
+#peopletextdiv{
+width: calc(100% - 320px);
+height:auto;
+display:inline-block;
+margin-left:270px;
+padding-top:0px;
+padding-right:10px;
+margin-top:0px;
+}
+#peoplebox{
+margin-top:20px;
+margin-bottom:60px;
+width:93%;
+margin-left: 0;
+margin-right: 0;
+position:relative;
+min-height: 315px;
+padding-left:20px;
+max-width: 1000px;
+}
+
+.smallpiccontainer {
+display: flex;
+justify-content: space-between;
+width:95%;
+max-width: 960px;
+margin-left:auto;
+margin-right:auto;
+}
+#lastcontainer{
+  margin-bottom:90px;
+}
+.firstcontainer{
+  margin-top:50px;
+}
+
+.smallpiccontainer div {
+width: 27.0vw;
+height: 27.0vw;
+max-width:280px;
+max-height:280px;
+background-size: 100%;
+margin-top:50px;
+margin-bottom:50px;
+position: relative;
+display:table;
+background-color: gray;
+}
+
+#hotelname{
+  margin-bottom:0px;
+width:27vw;
+max-width: 280px;
+bottom:-40px;
+text-align:center;
+position: absolute;
+font-family:gotham;
+font-size:16px;
+font-weight:400;
+}
+
+#box1{
+width:100px;
+height:100px;
+background-color: orange;
+}
+
+#button{
+font-size:40px;
+}
+
+#buttontext{
+font-family:'gotham';
+font-size:20px !important;
+line-height:30px;
+-o-transition:.25s;
+-ms-transition:.25s;
+-moz-transition:.25s;
+-webkit-transition:.25s;
+transition:.25s;
+}
+
+.backarrow{
+font-size:20px !important;
+padding:0px 10px 3px 0px;
+display: inline-block;
+vertical-align: middle;
+}
+
+#hoteltitle{
+font-family: gotham;
+margin-top:100px;
+font-size: 25px;
+letter-spacing: 4px;
+line-height: 33px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:50px;
+width:90%;
+max-width:1190px;
+}
+#HotelText{
+font-size: 18px;
+letter-spacing: 2px;
+line-height: 26px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:100px;
+width:90%;
+max-width:1190px;
+}
+
+.buttondiv{
+width:90%;
+max-width:1190px;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:100px;
+}
+
+
+
+#underhotel{
+margin-left:auto;
+margin-right:auto;
+}
+
+#sliderspot{
+background-color: red;
+width:500px;
+height:500px;
+}
+
+#lowermenu h3{
+color:white;
+font-weight: 500;
+}
+
+
+.content-container{
+margin-left:auto;
+margin-right:auto;
+}
+
+#press{
+  margin-top:50px;
+  margin-bottom:0px;
+  text-align:center;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+#careerstitle{
+  margin-top:90px;
+  margin-bottom:40px;
+  text-align:left;
+  line-height: 40px;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  letter-spacing:2px;
+}
+
+#careers{
+  margin-top:50px;
+  margin-bottom:0px;
+  text-align:center;
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+  letter-spacing:2px;
+}
+#careershr{
+  width:90%;
+}
+#article{
+  text-decoration: underline;
+}
+#biggestdiv{
+  height:200px;
+}
+.content-container {
+    margin-bottom:40px;
+ height: 325px;
+    text-align: center;
+}
+
+#homeimage{
+  width:60%;
+  height:400px;
+  background-color:red;
+  border-style:solid;
+display:none;
+  box-sizing: border-box;
+}
+#biggestdiv{
+  height:auto;
+}
+.my-slider{
+max-height:90vh;
+}
+.col-85{
+  max-width:1190px;
+  width:100%;
+  background-color:#E6E7E8;
+}
+.top{
+  min-height:315px;
+  margin-top:105px;
+  padding-bottom:70px;
+}
+.middle{
+  height:385px;
+}
+.bottom{
+  height:210px;
+  margin-bottom:105px;
+  margin-top:-4px;
+}
+.col-100{
+  width:100%;
+  background-color:#E6E7E8;
+}
+.center{
+  margin-left:auto;
+  margin-right:auto;
+  display:inline-block;}
+  .widthcap{
+    max-width:1190px;
+    padding-left:105px;
+    padding-right:105px;
+  }
+  .mission{
+    padding-top:70px;
+width:100%;
+text-align:center;
+font-weight:800;
+  }
+
+  .left{
+    float:left;
+    width:50%;
+    padding-left:35px;
+    padding-right:17.5px;
+    box-sizing:border-box;
+  }
+  .right{
+    padding-right:35px;
+    padding-left: 17.5px;
+    float:right;
+    width:50%;
+        box-sizing:border-box;
+  }
+  .col-33{
+    width:33.3333%;
+    background-color:orange;
+    display:inline-block;
+    height:385px;
+    display:inline-block;
+        border-style:solid;
+    box-sizing: border-box;
+    position: relative;
+  }
+  #color{
+    background-color:#414042;
+    padding-top:105px;
+  }
+  .fixer{
+    padding-left:105px;
+    padding-right:105px;
+    text-align:center;
+  }
+  .titlefont{
+    font-size:42px;
+    letter-spacing:2px;
+    font-weight: 400;
+  }
+  .bodyfont{
+     font-size:15px;
+    letter-spacing:1px;
+    line-height: 20px;
+    font-weight: 100;
+        text-align: justify;
+    text-justify: inter-word;
+  }
+  .gotham{
+    font-family:gotham;
+  }
+.viewhistory{
+width:50%;
+float:right;
+padding-left:35px;
+text-align:left;
+}
+
+.historyleft{
+text-align:center;
+width:100%;
+
+}
+ul#lowermenu li:last-child { 
+    padding-right:0;
+}
+.bluecolor{
+  color:#004363;
+}
+.gothambook{
+ font-family:gotham book; 
+}
+.gothambold{
+  font-family:gotham bold;
+}
+.whitefont{
+  color:white;
+}
+#lowermenudiv{
+  width:100%;
+  max-width:1400px;
+  margin-left:auto;
+  margin-right:auto;
+  height:10px;
+  padding: 0 105px 0 105px;
+  box-sizing: border-box;
+}
+.hotellogo{
+  margin-left:5%;
+  margin-right:5%;
+  margin-top:35px;
+  opacity:.6;
+  width:14%;
+  display: inline-block;
+  height:auto;
+  vertical-align: center;
+}
+.hampton{margin-top:59px;}
+.starwood{margin-top: 77.5px;}
+.marriot{margin-top: 67.25px;}
+.fourpoints{margin-top:74px;}
+.logo{
+width:175px;
+position:absolute;
+margin-top:-90px;
+margin-left:70px;
+z-index:500;
+}
+.bartitle{
+padding-top:20px;
+padding-bottom:20px;
+  }}
+
