@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+.image{
+background-image:url(img/seattle.jpg);
+background-size: cover;
+    }
+    #overlay{
+    	background-color: red;
+    	opacity:0;
+    	width:100%;
+	height:100%;
+   transition: opacity .15s ease-in-out;
+   -moz-transition: opacity .15s ease-in-out;
+   -webkit-transition: opacity .15s ease-in-out;
+
+    }
+
+#overlay:hover{
+	opacity:.3;
+}
+div.image{
+	float:left;
+	width:100%;
+	height:100vw;
+	position: relative;
+}
+#one{
+background-image: url("img/marriotcourtyard/marriotcourtyardbutton9.jpg");
+background-size:cover;
+}
+#two{
+background-image: url("img/hamptoninnseattle/hamptonseattlebutton1.jpg");
+background-size:cover;
+}
+#three{
+background-image: url("img/residenceinn/residenceinnbutton4.jpg");
+background-size:cover;
+}
+#four
+{background-image: url("img/fourpoints/FourPointsbutton3.jpg");
+background-size:cover;
+}
+#five{
+background-image: url("img/hamptoninntacoma/hamptontacomabutton9.jpg");
+background-size:cover;
+}
+#six
+{background-image: url("img/hamptoninnpuyallup/hamptonpuyallupbutton9.jpg");
+background-size:cover;
+}
+.hotelname{
+	position: absolute;;
+	bottom:0px;
+	left:20px;
+}
+@media screen and (min-width: 600px) {
+div.image{
+	float:left;
+	width:50%;
+	height:50vw;
+}
+@media screen and (min-width: 900px) {
+div.image{
+	float:left;
+	width:33.333%;
+	height:33.333vw;
+}
+}
+    </style>
+  </head>
+  <body>
+  <a href="bellevuecourtyard.html">
+	  <div class="image" id="one">
+	  	<div id="overlay"></div>
+	  	<p class="hotelname">BELLEVUE COURTYARD BY MARRIOT</p>
+	  </div>
+  </a>
+    <a href="seattlehampton.html">
+	  <div class="image" id="two">
+	  	<div id="overlay"></div>
+	  	<p class="hotelname">SEATTLE HAMPTON INN & SUITES</p>
+	  </div>
+  </a>
+    <a href="bellevuecourtyard.html">
+	  <div class="image" id="three">
+	  	<div id="overlay"></div>
+	  	<p class="hotelname">SEATTLE MARRIOT RESIDENCE INN</p>
+	  </div>
+  </a>
+    <a href="home.html">
+	  <div class="image"  id="four">
+	  	<div id="overlay"></div>
+	  	<p class="hotelname">SEATTLE FOUR POINTS BY SHARATON</p>
+	  </div>
+  </a>
+    <a href="tacomahampton.html">
+	  <div class="image" id="five">
+	  	<div id="overlay"></div>
+	  	<p class="hotelname">TACOMA HAMPTON INN & SUITES</p>
+	  </div>
+  </a>
+    <a href="puyalluphampton.html">
+	  <div class="image" id="six">
+	  	<div id="overlay"></div>
+	  	<p class="hotelname">PUYALLUP HAMPTON INN & SUITES</p>
+	  </div>
+  </a>
+  </body>
+</html>

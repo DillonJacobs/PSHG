@@ -5,12 +5,34 @@
   <style>
   #biggestdiv{
     overflow:auto;
+    margin-top:200px;
     }
     #biggestdiv{
-      background-image:url("img/HamInnTacomaThumb04.jpg");
+    background-color: rgba(0, 67, 99, 0.5);
+    }
+    #mobilepicturediv{
+      width:100%;
+      height:600px;
+      background-color: black;
+    }
+    div#biggestdiv p, div#biggestdiv ul li{
+      color:white!important;
+    }
+    ul.navList{
+      margin-top:-5px;
+      cursor: pointer;
+    }
+    ul.navList li:hover{
+ opacity:.4;
+ -o-transition:.25s;
+-ms-transition:.25s;
+-moz-transition:.25s;
+-webkit-transition:.25s;
+transition:.25s;
     }
     </style>
 </head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="js/jquery-1.12.0.js"></script>
 <script src="js/unslider-min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -24,10 +46,7 @@ var navLinks = $('.navLink');
 var contentElements = $('.content');
 
 navLinks.on('click', function (e) {
-
-    //set menu
     navLinks.removeClass('selected');
-
     $(e.currentTarget).addClass('selected');
     var navId = $(e.currentTarget).attr('id');
     contentElements.hide();
@@ -49,9 +68,9 @@ navLinks.on('click', function (e) {
 });
 </script>
 <body>
-<title> PUGET SOUND HOSPITALITY GROUP</title>
+<title>PUGET SOUND HOSPITALITY GROUP</title>
  
-<a href="home.html"><img class="logo" src="PSH.svg"></a>
+<a href="home.html"><img class="logo" src="img/PSH.svg"></a>
 <ul id="menu">
   <li><a href="HOTELS.html"> HOTELS</a></li>
   <li><a href="modstudios.html"> EXTENDED STAY</a></li>
@@ -70,8 +89,8 @@ navLinks.on('click', function (e) {
 
 
     <div id="graybox">
-
 <div class="container">
+
       <div id="one" class="content">
           <p id="bigabouttext"> WHO WE ARE</p>
           <p class="bodytext" id="abouttext"> We have recently rebranded our company into a single entity called Puget Sound Hospitality and we are one of the largest and fastest growing locally owned and managed hospitality companies within the Puget Sound Region.
@@ -81,25 +100,24 @@ Over the next five years we will be expanding our portfolio to include additiona
       </div>
 
       <div id="two" class="content">
-          <p id="bigabouttext">MEET OUT TEAM</p>
-          <p id="abouttext">
+          <p id="bigabouttext">MEET OUR TEAM</p>
 
             <div id="peoplebox">
-            <div id="imgplaceholder"></div>
+            <!--<div id="imgplaceholder"></div>-->
 
             <p class="bodytext" id="peopletextdiv"> Paul Pong, President <br><br> As the President of the Pong-family hotel operation, Paul’s extensive background in project planning, coordination and operations makes him the right leader to guide our company through the next growth and development stages. A graduate of the University of Washington with a BS in electrical engineering, Paul is well respected within the Seattle community. He is active in many organizations including the Asian American Hotel & Motel Association. Paul is fluent in Mandarin and Taiwanese and lives in the city of Medina, Washington with his three children.</p>
             </div>
 
 
 <div id="peoplebox">
-<div id="imgplaceholder"></div>
+ <!--<div id="imgplaceholder"></div>-->
 
 <p class="bodytext" id="peopletextdiv"> Rick Tupper, Corporate Director of Operations <br><br> Rick has extensive experience in all facets of hotel operations. He has spent over 30+ years in the hospitality industry including 33 years with Marriott Hotels, 25 of those years as a hotel executive. His passion is delivering exceptional service to the customer through the development of management. Rick is honored to be the recipient of the JW Marriott Award of Excellence, the highest honor awarded by the Marriott Corporation to employees that embody the company's core values; recipients are nominated by their peers and supervisors for their outstanding performance. Rick graduated from Washington State University and lives with his wife in Kirkland, Washington.</p>
 </div>
 
 <div id="peoplebox">
-<div id="imgplaceholder"></div>
-<p class="bodytext" id="peopletextdiv">Julie Mackey, Regional Direction of Sales <br> Julie is a graduate of the University of Oregon with a BS in communications. A senior hospitality executive with more than 28 years of experience, Julie has extensive knowledge in sales & account management as well as operations. Prior to joining the company, Julie had acquired extensive hospitality experience in roles such as General Manager and Director of Sales & Marketing within various brands, including Hilton, Embassy Suites, Homewood Suites and Destination Hotels & Resort. She also has eleven years of experience within Marriott International, working in various sales leadership roles. Julie lives in Redmond, Washington with her husband and son. 
+ <!--<div id="imgplaceholder"></div>-->
+<p class="bodytext" id="peopletextdiv">Julie Mackey, Regional Direction of Sales <br><br> Julie is a graduate of the University of Oregon with a BS in communications. A senior hospitality executive with more than 28 years of experience, Julie has extensive knowledge in sales & account management as well as operations. Prior to joining the company, Julie had acquired extensive hospitality experience in roles such as General Manager and Director of Sales & Marketing within various brands, including Hilton, Embassy Suites, Homewood Suites and Destination Hotels & Resort. She also has eleven years of experience within Marriott International, working in various sales leadership roles. Julie lives in Redmond, Washington with her husband and son. 
 </p>
 </div>
 </div>
@@ -113,16 +131,17 @@ From 1981–1999, they opened twelve additional properties in the Seattle area, 
       </div>
 
       <div id="fourfour" class="content">
-          <p id="bigabouttext">WE’RE ON A MISSION </p>
+          <p id="bigabouttext" class="tallerbigabouttext">WE'RE ON A MISSION </p>
           <p class="bodytext" id="abouttext"> It is our passion to provide unmatched service to our guests, create opportunities for our associates and build properties that both can call home. We strive to achieve success by being innovative and taking on the responsibility to exceed expectations. Our goal is to create environments that inspire connections. Over the next five years we will be expanding our portfolio to include additional national brands as well as corporate housing. 
             </p>
       </div>
 </div>
+ 
 
 
 <div id="leftmenu" class="menu">
 <ul class="navList">
-  <li id="menu1" class="navLink selected"><a>MISSION</a></li>
+  <li id="menu1" class="navLink selected"><a>ABOUT</a></li>
       <li id="menu2" class="navLink"><a>PEOPLE</a> </li><li>
         <li id="menu3" class="navLink"><a>HISTORY</a></li>
         <li id="menu4" class="navLink"><a>MISSION</a></li>

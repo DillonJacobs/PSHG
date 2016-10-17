@@ -2,6 +2,8 @@
 <html>
 
 <head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
   .smallpiccontainer {
   display: flex;
@@ -33,16 +35,67 @@ margin-floatright:auto;
     }
 
   .floatright{
-    float:       right;
+    float:left;
   }
   .hotelname{
 font-family:gotham;
     position:absolute;
     bottom:0;
     left:15px;
+    color:white;
+    letter-spacing:1px;
+    z-index:600;
   }
+  a .buttonlink{
+    border-style:none;
+    }
+    .col-33::before {
+      height:100px;
+      width:100px;
+      float:left;
+      background-color:black;
+    } 
+  .col{
+    width:33.3333%;
+    float:left;
+    height:33vw;
+    background-color:transparent;
+    position:absolute;
+    opacity:0;
+    z-index:100;
 
+      transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  }
+  .lowcol{
+    margin-top:33vw;
+  }
+  .middlecol{
+margin-left:33.333%;
+  }
+  .rightcol{
+    margin-left:66.666%;
+
+  }
+  .col:hover{
+    opacity:.5;
+    background-color:#004363;
+      transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  }
+.buttonone{background-image: url("img/marriotcourtyard/marriotcourtyardbutton9.jpg");}
+.buttontwo{background-image: url("img/hamptoninnseattle/hamptonseattlebutton1.jpg");}
+.buttonthree{background-image: url("img/residenceinn/residenceinnbutton4.jpg");}
+.buttonfour{background-image: url("img/fourpoints/FourPointsbutton3.jpg");}
+.buttonfive{background-image: url("img/hamptoninntacoma/hamptontacomabutton9.jpg");}
+.buttonsix{background-image: url("img/hamptoninnpuyallup/hamptonpuyallupbutton9.jpg");}
+a .bluelink{
+ width:33.333%;
+ height:33vw; 
   </style>
+
 </head>
 <script src="js/jquery-1.12.0.js"></script>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -51,7 +104,7 @@ font-family:gotham;
 <body>
 
 
-<a href="home.html"><img class="logo" src="PSH.svg"></a>
+<a href="home.html"><img class="logo" src="img/PSH.svg"></a>
 <ul id="menu">
   <li><a href="HOTELS.html"> HOTELS</a></li>
   <li><a href="modstudios.html"> EXTENDED STAY</a></li>
@@ -71,9 +124,14 @@ font-family:gotham;
 
 
 
-
-<div class="col-33 floatright"><p class="hotelname">Bellevue Courtyard by Marriott</p></div><div class="col-33 floatright"><p class="hotelname">Seattle Hampton Inn & Suites
-</p></div><div class="col-33 floatright"><p class="hotelname">Seattle Marriott Residence Inn </p></div><div class="col-33 floatright"><p class="hotelname">Seattle Four Points by Sheraton </p></div><div class="col-33 floatright"><p class="hotelname">Tacoma Hampton Inn & Suites</p></div><div class="col-33 floatright"><p class="hotelname">Puyallup Hampton Inn & Suites</p></div>
+<a class="bluelink" href="bellevuecourtyard.html"><div class="col twoleft"></div></a><!--
+--><a class="bluelink" href="seattlehampton.html"><div class="col middlecol tworight"></div></a><!--
+--><a class="bluelink" href="bellevuecourtyard.html"><div class="col lowcol rightcol twoleft"></div></a><!--
+--><a class="bluelink" href="seattlefourpoints.html"><div class="col lowcol tworight"></div></a><!--
+--><a class="bluelink" href="tacomahampton.html"><div class="col lowercol middlecol twoleft"></div></a><!--
+--><a class="bluelink" href="puyalluphampton.html"><div class="col lowcol lowercol rightcol tworight"></div></a><!--
+--><div class="col-33 floatright buttonone"><p class="hotelname">BELLEVUE COURTYARD BY MARRIOT</p></div></a><a class="buttonlink" href="seattlehampton.html"><div class="col-33 floatright buttontwo"><p class="hotelname">SEATTLE HAMPTON INN & SUITES
+</p></div></a><a class="buttonlink" href="seattlemarriot.html"><div class="col-33 floatright buttonthree"><p class="hotelname">SEATTLE MARRIOT RESIDENCE INN</p></div></a><a class="buttonlink" href="seattlefourpoints.html"><div class="col-33 floatright buttonfour"><p class="hotelname">SEATTLE FOUR POINTS BY SHARATON</p></div></a><a class="buttonlink" href="tacomahampton.html"><div class="col-33 floatright buttonfive"><p class="hotelname">TACOMA HAMPTON INN & SUITES</p></div></a><a class="buttonlink" href="puyallyphampton.html"><div class="col-33 floatright buttonsix"><p class="hotelname">PUYALLUP HAMPTON INN & SUITES</p></div></a>
 <!--3x3 hotel boxes->
 <div id="mobile">
 <div id="mobilehotel">

@@ -3,13 +3,20 @@
 <html>
 <head>
 
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="js/jquery-1.12.0.js"></script>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/mobilestyles.css">
 <script type="text/javascript" src="js/scripts.js"> </script>
 <link rel="stylesheet" href="css/unslider.css">
+ <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+       <link rel="stylesheet" href="css/popupstyle.css">
 
+<style>
+
+
+
+</style>
 <script>
   jQuery(document).ready(function($) {
     $('.my-slider').unslider({
@@ -49,8 +56,9 @@ $(document).ready(function() {
   $('.maps.embed-container').on('click', onMapClickHandler);
   });
   </script>
+  <body>
 <title> PUGET SOUND HOSPITALITY GROUP</title>
-
+<div id="header">
 <a href="home.html"><img class="logo" src="img/PSH.svg"></a>
 <ul id="menu">
   <li><a href="HOTELS.html"> HOTELS</a></li>
@@ -58,7 +66,19 @@ $(document).ready(function() {
   <li><a href="tavern12.html"> TAVERN 12</a></li>
   <li><a href="ABOUT.html"> ABOUT</a></li>
 </ul>
-
+            <button id="trigger-overlay" class="whitetext smalltext quickfade" type="button">MENU<img class="mobilehamburgermenu" src="img/hamburgermenu.png"></button>
+      <div class="overlay overlay-scale">
+      <button type="button" class="overlay-close fade">Close</button>
+      <div class="info">
+        <div id="hamdiv">
+          <a id="hammenu" class="blacktext quickfade" href="#graybox">ABOUT</a>
+          <a id="hammenu" class="blacktext quickfade" href="work.html">WORK</a>
+          <a id="hammenu" class="blacktext quickfade" href="#footer">CONTACT</a>
+        </div>
+      </div>
+  </div>
+  </div>
+  </div>
 <div id="biggestdiv">
   <div id="toolbar">
   <div id="active"><p id="activetext"><a id="link" href="hotels.html">HOTELS</a></p>
@@ -74,13 +94,11 @@ $(document).ready(function() {
 
 
 
-      <div class="my-slider">
-
-        <ul id="slider">
-          <li> <img id="sliderpic" src="img/marriotbellevue/MarriotBellevue00.jpg"> </li>
-          <li> <img id="sliderpic" src="img/marriotbellevue/MarriotBellevue03.jpg"> </li>
-          <li> <img id="sliderpic" src="img/marriotbellevue/MarriotBellevue09.jpg"> </li>
-        </ul>
+      <div class="my-slider"><ul id="slider"><!--
+          --><li><!----><img id="sliderpic" src="img/hamptoninnpuyallup/hamptonpuyallupslider7.jpg"></li><!--
+          --><li><img id="sliderpic" src="img/fourpoints/FourPointsslider1.jpg"></li><!--
+          --><li><img id="sliderpic" src="img/marriotcourtyard/marriotcourtyardslider6.jpg"></li><!--
+        --></ul>
 <!--
             <div id="catchphrase-box">
 </div>
@@ -147,3 +165,8 @@ $(document).ready(function() {
 
 </div>
 <script src="js/unslider-min.js"></script>
+<script src="js/index.js"></script>
+<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.16.0'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+</body>

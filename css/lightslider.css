@@ -177,7 +177,7 @@ opacity: 0.4;
 }
 .lSAction > .lSNext {
     background-position: -32px 0;
-    right: 10px;
+    /* right: 10px;
 }
 .lSAction > a.disabled {
     pointer-events: none;
@@ -199,7 +199,7 @@ opacity: 0.4;
 }
 .lSSlideOuter.vertical .lSGallery {
     position: absolute !important;
-    right: 0;
+    right: 15px;
     top: 0;
 }
 .lSSlideOuter.vertical .lightSlider > * {

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+.demo {
+width:100%;
+padding-bottom:20px;
+}
+ul.lSPager.lSGallery{
+  margin-left:auto!important;
+  margin-right:auto!important;
+
+}
+ul.lSPager.lSGallery{
+  max-width:1400px;
+  margin-right:auto;
+  margin-left:auto;
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/mobilestyles.css">
+<link type="text/css" rel="stylesheet" href="css/lightslider2.css">
+<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/popupstyle.css">
+</head>
+<script src="js/jquery-1.12.0.js"></script>
+<script src="js/lightslider.min.js"></script>
+<title> PUGET SOUND HOSPITALITY GROUP</title>
+
+    <script>
+$( document ).ready(function() {
+  var slider =  $('#lightSlider2').lightSlider({
+      gallery: true,
+      item: 1,
+      loop: true,
+      slideMargin: 0,
+      thumbMargin: 30,
+      galleryMargin: 20,
+      thumbItem: 10,
+      mode: 'fade',
+      onSliderLoad: function () {
+        slider.goToSlide(1);
+    }
+
+});
+
+
+  });
+</script>
+
+
+
+<body>
+  <div id="biggestdiv">
+    <div id="header">
+      <a href="home.html"><img class="logo" src="img/PSH.svg"></a>
+      <ul id="menu">
+        <li><a href="HOTELS.html"> HOTELS</a></li>
+        <li><a href="modstudios.html"> EXTENDED STAY</a></li>
+        <li><a href="tavern12.html"> TAVERN 12</a></li>
+        <li><a href="ABOUT.html"> ABOUT</a></li>
+      </ul>
+      <button id="trigger-overlay" class="whitetext smalltext quickfade" type="button">
+        <img class="mobilehamburgermenu" src="img/hamburgermenu.png">
+      </button>
+      <div class="overlay overlay-scale">
+        <button type="button" class="overlay-close fade">Close</button>
+        <div class="info">
+          <div id="hamdiv">
+            <a id="hammenu" class="blacktext quickfade" href="#graybox">ABOUT</a>
+            <a id="hammenu" class="blacktext quickfade" href="work.html">WORK</a>
+            <a id="hammenu" class="blacktext quickfade" href="#footer">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  class="nospace" id="mobile">
+      <img src="img/marriotcourtyard/marriotcourtyard1.jpg"/>
+      <img src="img/marriotcourtyard/marriotcourtyard2.jpg"/>
+      <img src="img/marriotcourtyard/marriotcourtyard3.jpg"/>
+      <img src="img/marriotcourtyard/marriotcourtyard4.jpg"/>
+      <img src="img/marriotcourtyard/marriotcourtyard5.jpg"/>
+      <img src="img/marriotcourtyard/marriotcourtyard7.jpg"/>
+      <img src="img/marriotcourtyard/marriotcourtyard8.jpg"/>
+      <img src="img/marriotcourtyard/marriotcourtyard9.jpg"/>
+      <img src="img/marriotcourtyard/marriotcourtyard10.jpg"/>
+    </div>
+    <div class="demo">
+      <ul id="lightSlider2">
+        <li data-thumb="img/marriotcourtyard/marriotcourtyardthumb1.jpg">
+          <img src="img/marriotcourtyard/marriotcourtyard1.jpg"/>
+        </li>
+        <li data-thumb="img/marriotcourtyard/marriotcourtyardThumb2.jpg">
+          <img src="img/marriotcourtyard/marriotcourtyard2.jpg"/>
+        </li>
+        <li data-thumb="img/marriotcourtyard/marriotcourtyardThumb3.jpg">
+          <img src="img/marriotcourtyard/marriotcourtyard3.jpg"/>
+        </li>
+        <li data-thumb="img/marriotcourtyard/marriotcourtyardThumb4.jpg">
+          <img src="img/marriotcourtyard/marriotcourtyard4.jpg"/>
+        </li>
+        <li data-thumb="img/marriotcourtyard/marriotcourtyardThumb5.jpg">
+          <img src="img/marriotcourtyard/marriotcourtyard5.jpg"/>
+        </li>
+        <li data-thumb="img/marriotcourtyard/marriotcourtyardThumb7.jpg">
+          <img src="img/marriotcourtyard/marriotcourtyard7.jpg"/>
+        </li>
+        <li data-thumb="img/marriotcourtyard/marriotcourtyardThumb8.jpg">
+          <img src="img/marriotcourtyard/marriotcourtyard8.jpg"/>
+        </li>
+        <li data-thumb="img/marriotcourtyard/marriotcourtyardThumb9.jpg">
+          <img src="img/marriotcourtyard/marriotcourtyard9.jpg"/>
+        </li>
+        <li data-thumb="img/marriotcourtyard/marriotcourtyardThumb10.jpg">
+          <img src="img/marriotcourtyard/marriotcourtyard10.jpg"/>
+        </li>
+      </ul>
+    </div>
+    <div id="underhotel">
+      <p id="hoteltitle"> MARRIOT COURTYARD <br>
+      DOWNTOWN BELLEVUE</p>
+      <p id="HotelText">
+      Immerse yourself in a stylish city escape at Courtyard Seattle Bellevue/Downtown. Just 15 minutes from exciting attractions in Downtown Seattle and a short drive from Lake Washington, our hotel in Bellevue, WA will place you within easy access of all of the adventures you crave. Combine convenience with comfort in our modernly appointed accommodations, boasting chic sitting areas, luxury bedding, complimentary Wi-Fi and large work desks with ergonomic chairs for staying productive in private. Fuel the day's activities with a made-to-order omelet and specialty Starbucks® beverage from Table 8 in the morning, or wind down with cocktails and flavorful cuisine inspired by the surrounding area in the evening. During downtime, work up a sweat in our state-of-the art fitness center, or opt for relaxation with a refreshing dip in our sparkling indoor pool. Whether traveling for business or leisure, treat yourself to all of the amenities that make Courtyard one of the premier hotels in Bellevue, WA.
+        <a href="hotels.html">
+          <div class="buttondiv">
+            <p id="buttontext">
+              <span class="backarrow"><</span>ALL HOTELS
+            </p>
+          </div>
+        </a>
+      </p>
+    </div>
+    <div id="graybox"> </div>
+    <div id="footer">
+      <div id="lowermenudiv">
+        <ul id="lowermenu" class="">
+          <li> <a href="events.html"> <h3>EVENTS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
+          <li> <a href="press.html"> <h3>PRESS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
+          <li> <a href="careers.html"> <h3>CAREERS</a>&nbsp;&nbsp;&nbsp;/</h3> </li>
+          <li> <a href="eb5investors.html"> <h3>EB-5 INVESTORS</a></h3> </li>
+        </ul>
+      </div>
+      <HR id="footerhr" class="widthcap">
+      <p id="footertxt" class="widthcap">
+        <span id="footertxt">C. PUGET SOUND HOSPITALITY GROUP 2015</br>SITE BY NEARABOUT CREATIVE</span>
+      </p>
+    </div>
+    </div>
+  </div>
+</body>
