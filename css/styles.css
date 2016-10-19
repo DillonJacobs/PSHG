@@ -152,23 +152,7 @@ font-weight:200;
 font-family: gotham;
 font-size:18px;
 }
-ul#menu{
-display:table;
-table-layout: fixed;
-max-width: 1250px;
-padding: 0;
-float:right;
-font-family: "gotham bold";
-font-size: 14px;
-font-weight:400;
-color: black;
-text-align:left;
-position:relative;
-letter-spacing: 1px;
-margin-top:36.5px;
-margin-bottom:38.5px;
-margin-right:70px;
-}
+ul#menu{display:table;table-layout: fixed;max-width: 1250px;padding: 0;float:right;font-family: "gotham bold";font-size: 14px;font-weight:400;color: black;text-align:left;position:relative;letter-spacing: 1px;margin-top: 46px;margin-bottom: 46px;margin-right:70px;}
 ul#menu li{
 list-style-type: none;
 display:table-cell;
@@ -209,7 +193,7 @@ ul#lowermenu a:hover{
 color:black;
 }
 
-#biggestdiv{width:100%;display:block;margin-right:auto;margin-left:auto;position:relative;/* min-height: 800px; */}
+#biggestdiv{width:100%;display:block;margin-right:auto;margin-left:auto;position:relative;min-height: 800px;}
 
 #graybox{
 width:100%;
@@ -353,10 +337,11 @@ div#footer{
   position:relative;
   padding-top:28px;
 }
+/*
 #one {
   margin-bottom:100px;
 }
-#two {display:none;/* margin-top:50px; */}
+#two {display:none;margin-top:50px;}
 #three {
 display:none;
 margin-bottom:50px;
@@ -364,7 +349,7 @@ margin-bottom:50px;
 #fourfour{
 display:none;
 margin-bottom:50px;
-}
+}*/
 .navLink{
     font-weight:200;
 }
@@ -635,7 +620,6 @@ display:none;
 }
 #biggestdiv{
   height:auto;
-  padding-top: 128px;
 }
 .my-slider{
 max-height:90vh;
@@ -792,7 +776,7 @@ ul#lowermenu li:last-child {
 .logo{
 width:175px;
 top:0px;
-margin-left:105px;
+margin-left:70px;
 position:absolute;
 z-index:500;
 }
@@ -805,9 +789,9 @@ img {
 width:100%;
 }
 div#header{
- height:90px;
+ height:105px;
  width:100%;
- max-width:1400mpx;
+ max-width:1400px;
  margin-left:auto;
  margin-right:auto;
  display:block; 

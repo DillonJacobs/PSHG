@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-
+<html lang="en">
+  <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <style>
+<script src="js/jquery-1.12.0.js"></script>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/mobilestyles.css">
+<script type="text/javascript" src="js/scripts.js"> </script>
+<link rel="stylesheet" href="css/unslider.css">
+<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/popupstyle.css">
+  <!--<style>
   .smallpiccontainer {
   display: flex;
   justify-content: space-between;
@@ -94,16 +99,85 @@ margin-left:33.333%;
 a .bluelink{
  width:33.333%;
  height:33vw; 
-  </style>
+  </style>-->
+    <style>
+.image{
+background-image:url(img/seattle.jpg);
+background-size: cover;
+    }
+    #overlay{
+      background-color: #004363;
+      opacity:0;
+      width:100%;
+  height:100%;
+   transition: opacity .15s ease-in-out;
+   -moz-transition: opacity .15s ease-in-out;
+   -webkit-transition: opacity .15s ease-in-out;
 
+    }
+
+#overlay:hover{
+  opacity:.5;
+}
+div.image{
+  float:left;
+  width:100%;
+  height:100vw;
+  position: relative;
+}
+#one{
+background-image: url("img/marriotcourtyard/marriotcourtyardbutton9.jpg");
+background-size:cover;
+}
+#two{
+background-image: url("img/hamptoninnseattle/hamptonseattlebutton1.jpg");
+background-size:cover;
+}
+#three{
+background-image: url("img/residenceinn/residenceinnbutton4.jpg");
+background-size:cover;
+}
+#four
+{background-image: url("img/fourpoints/FourPointsbutton3.jpg");
+background-size:cover;
+}
+#five{
+background-image: url("img/hamptoninntacoma/hamptontacomabutton9.jpg");
+background-size:cover;
+}
+#six
+{background-image: url("img/hamptoninnpuyallup/hamptonpuyallupbutton9.jpg");
+background-size:cover;
+}
+.hotelname{
+  position: absolute;;
+  bottom:0px;
+  left:20px;
+  color:white;
+  font-family:gotham;
+  font-size:15px;
+  margin-right:20px;
+
+}
+@media screen and (min-width: 600px) {
+div.image{
+  float:left;
+  width:50%;
+  height:50vw;
+}
+}
+@media screen and (min-width: 900px) {
+div.image{
+  float:left;
+  width:33.333%;
+  height:33.333vw;
+}
+}
+    </style>
 </head>
-<script src="js/jquery-1.12.0.js"></script>
-<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-<link rel="stylesheet" type="text/css" href="css/mobilestyles.css">
 <body>
-
-
+<div id="header">
 <a href="home.html"><img class="logo" src="img/PSH.svg"></a>
 <ul id="menu">
   <li><a href="HOTELS.html"> HOTELS</a></li>
@@ -111,67 +185,55 @@ a .bluelink{
   <li><a href="tavern12.html"> TAVERN 12</a></li>
   <li><a href="ABOUT.html"> ABOUT</a></li>
 </ul>
-
-<div id="biggestdiv">
-  <div id="toolbar">
-  <div id="active"><p id="activetext"><a id="link" href="restraunts.html">HOTELS</a></p>
-  </div><div id="four"><p id="text"><a id="link" href="restraunts.html">HOUSING</a></p>
-  </div><div id="four"><p id="text"><a id="link" href="restraunts.html">TAVERN 12</a></p>
-  </div><div id="four"><p id="text"><a id="link" href="restraunts.html">ABOUT</a></p>
+            <button id="trigger-overlay" class="whitetext smalltext quickfade" type="button">MENU<img class="mobilehamburgermenu" src="img/hamburgermenu.png"></button>
+      <div class="overlay overlay-scale">
+      <button type="button" class="overlay-close fade">Close</button>
+      <div class="info">
+        <div id="hamdiv">
+          <a id="hammenu" class="blacktext quickfade" href="#graybox">ABOUT</a>
+          <a id="hammenu" class="blacktext quickfade" href="work.html">WORK</a>
+          <a id="hammenu" class="blacktext quickfade" href="#footer">CONTACT</a>
+        </div>
+      </div>
   </div>
-</div>
-
-
-
-
-<a class="bluelink" href="bellevuecourtyard.html"><div class="col twoleft"></div></a><!--
---><a class="bluelink" href="seattlehampton.html"><div class="col middlecol tworight"></div></a><!--
---><a class="bluelink" href="bellevuecourtyard.html"><div class="col lowcol rightcol twoleft"></div></a><!--
---><a class="bluelink" href="seattlefourpoints.html"><div class="col lowcol tworight"></div></a><!--
---><a class="bluelink" href="tacomahampton.html"><div class="col lowercol middlecol twoleft"></div></a><!--
---><a class="bluelink" href="puyalluphampton.html"><div class="col lowcol lowercol rightcol tworight"></div></a><!--
---><div class="col-33 floatright buttonone"><p class="hotelname">BELLEVUE COURTYARD BY MARRIOT</p></div></a><a class="buttonlink" href="seattlehampton.html"><div class="col-33 floatright buttontwo"><p class="hotelname">SEATTLE HAMPTON INN & SUITES
-</p></div></a><a class="buttonlink" href="seattlemarriot.html"><div class="col-33 floatright buttonthree"><p class="hotelname">SEATTLE MARRIOT RESIDENCE INN</p></div></a><a class="buttonlink" href="seattlefourpoints.html"><div class="col-33 floatright buttonfour"><p class="hotelname">SEATTLE FOUR POINTS BY SHARATON</p></div></a><a class="buttonlink" href="tacomahampton.html"><div class="col-33 floatright buttonfive"><p class="hotelname">TACOMA HAMPTON INN & SUITES</p></div></a><a class="buttonlink" href="puyallyphampton.html"><div class="col-33 floatright buttonsix"><p class="hotelname">PUYALLUP HAMPTON INN & SUITES</p></div></a>
-<!--3x3 hotel boxes->
-<div id="mobile">
-<div id="mobilehotel">
-<img id="mobilehotel" src="file:///Users/dillonjacobson2/Design/Sites/pse/img/haminnseattle07.jpg"/></div>
-<p id="mobilehoteltext"><a href="hotel1.html"> HAMPTON INN, SEATTLE &#8594;</a> </p>
-<div id="mobilehotel"><img src="file:///Users/dillonjacobson2/Design/Sites/pse/img/haminntacoma06.jpg"/></div>
-<p id="mobilehoteltext"><a href="hotel2.html"> HAMPTON INN, TACOMA &#8594;</a> </p>
-<div id="mobilehotel"><img src="file:///Users/dillonjacobson2/Design/Sites/pse/img/marriotbellevue01.jpg"/></div>
-<p id="mobilehoteltext"><a href="hotel3.html"> MARRIOT COURTYARD, BELLEVUE &#8594;</a> </p>
-<div id="mobilehotel"><img src="file:///Users/dillonjacobson2/Design/Sites/pse/img/marriotbellevue01.jpg"/></div>
-<p id="mobilehoteltext"><a href="hotel4.html"> MARRIOT COURTYARD, BELLEVUE &#8594;</a> </p>
-<div id="mobilehotel"><img src="file:///Users/dillonjacobson2/Design/Sites/pse/img/marriotbellevue01.jpg"/></div>
-<p id="mobilehoteltext"><a href="hotel5.html"> MARRIOT COURTYARD, BELLEVUE &#8594;</a> </p>
-<div id="mobilehotel"><img src="file:///Users/dillonjacobson2/Design/Sites/pse/img/marriotbellevue01.jpg"/></div>
-<p id="mobilehoteltext"><a href="hotel6.html"> MARRIOT COURTYARD, BELLEVUE &#8594;</a> </p>
-<div id="mobilehotel"><img src="file:///Users/dillonjacobson2/Design/Sites/pse/img/marriotbellevue01.jpg"/></div>
-<p id="mobilehoteltext"><a href="hotel7.html"> MARRIOT COURTYARD, BELLEVUE &#8594;</a> </p>
-<div id="mobilehotel"></div>
-<div id="mobilehotel"></div>
-</div>
-<div id="hotelgrid">
-<div  style="clear:both;" class="smallpiccontainer firstcontainer">
-     <a href="hotel1.html"> <div class="hamptonseattle fade" id="smallbox1"> <p id="hotelname"> HAMPTON INN SEATTLE </p> </div> </a>
-     <a href="hotel2.html"> <div class="hamptontacoma fade" id="smallbox2"> <p id="hotelname"> HAMPTON INN TACOMA </p> </div> </a>
-     <a href="hotel3.html"> <div class="marriotbellevue fade" id="smallbox3"> <p id="hotelname"> MARRIOT COURTYARD BELLEVUE </p> </div> </a>
-</div>
-<div class="smallpiccontainer">
-     <a href="hotel4.html"> <div id="smallbox1"> <p id="hotelname"> HOTEL </p> </div> </a>
-     <a href="hotel5.html"> <div id="smallbox2"> <p id="hotelname"> HOTEL </p> </div> </a>
-     <a href="hotel6.html"> <div id="smallbox3"> <p id="hotelname"> HOTEL </p> </div> </a>
-</div>
-<div  id="lastcontainer" class="smallpiccontainer">
-     <a href="hotel7.html"><div id="smallbox1"> <p id="hotelname"> HOTEL </p> </div></a>
-     <a href="hotel8.html"><div id="smallbox2"> <p id="hotelname"> HOTEL </p> </div></a>
-     <a href="hotel9.html"><div id="smallbox3"> <p id="hotelname"> HOTEL </p> </div></a>
-</div>
-</div>
--->
-
-
+  </div>
+<div id="biggestdiv">
+ <a href="bellevuecourtyard.html">
+    <div class="image" id="one">
+      <div id="overlay"></div>
+      <p class="hotelname">BELLEVUE COURTYARD BY MARRIOT</p>
+    </div>
+  </a>
+    <a href="seattlehampton.html">
+    <div class="image" id="two">
+      <div id="overlay"></div>
+      <p class="hotelname">SEATTLE HAMPTON INN & SUITES</p>
+    </div>
+  </a>
+    <a href="seattlemarriot.html">
+    <div class="image" id="three">
+      <div id="overlay"></div>
+      <p class="hotelname">SEATTLE MARRIOT RESIDENCE INN</p>
+    </div>
+  </a>
+    <a href="seattlefourpoints.html">
+    <div class="image"  id="four">
+      <div id="overlay"></div>
+      <p class="hotelname">SEATTLE FOUR POINTS BY SHARATON</p>
+    </div>
+  </a>
+    <a href="tacomahampton.html">
+    <div class="image" id="five">
+      <div id="overlay"></div>
+      <p class="hotelname">TACOMA HAMPTON INN & SUITES</p>
+    </div>
+  </a>
+    <a href="puyalluphampton.html">
+    <div class="image" id="six">
+      <div id="overlay"></div>
+      <p class="hotelname">PUYALLUP HAMPTON INN & SUITES</p>
+    </div>
+  </a>
 <div id="footer">
 <div id="lowermenudiv">
 <ul id="lowermenu" class="">
