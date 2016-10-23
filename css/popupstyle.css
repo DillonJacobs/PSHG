@@ -44,4 +44,5 @@
 	transform: scale(1);
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
 	transition: transform 0.4s, opacity 0.4s;
+	background-color: #414042;
 }

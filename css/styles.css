@@ -312,17 +312,7 @@ letter-spacing:2.5px;
 font-weight: 600;
 position:relative;
 }
-.smalltext{
-margin-top:-10px;
-font-family:gotham;
-font-size:12px;
-color:white;
-letter-spacing:2px;
-line-height: 27px;
-font-weight: light;
-display:inline-block;
-font-weight: 200;
-}
+.smalltext{margin-top:-10px;font-family:gotham;font-size:12px;color:white;letter-spacing:2px;line-height: 27px;font-weight: light;display:inline-block;font-weight: 200;}
 #mediumtext{}
 #smalltext{}
 
@@ -834,12 +824,9 @@ div#header{
   background-color:transparent;
   width:30px;
   height:30px;
+  /* top: 10px; */
   padding:0;
-  margin-right:70px;
-  margin-top:10px;
-
+  /* margin-right:70px; */
+  /* margin-top:10px; */
 }  
-a#hammenu{
-display:block;
-margin-left:auto;  
-}
+a#hammenu{display:block;margin-left:auto;color: white;text-align: center;font-family: gotham;font-size: 25px;line-height: 10vh;}
