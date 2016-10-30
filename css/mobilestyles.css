@@ -6,9 +6,7 @@ ul#menu{display:table;table-layout: fixed;max-width: 1250px;margin: -55px 15px 0
     display:block;
     display:none;
 }
-div#footer{
-  margin-top:170px;
-}
+
 .logo{
   margin-left:70px;
 }
