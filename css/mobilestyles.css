@@ -1,27 +1,13 @@
 @media screen and (max-width: 1020px) {
-ul#menu{
-display:table;
-table-layout: fixed;
-max-width: 1250px;
-margin: -55px 15px 0px 0px;
-padding: 0;
-width: calc(100% - 235px);
-float:right;
-font-family: "Helvetica", "ariel";
-font-weight: bold;
-font-size: 16px;
-font-weight:200;
-color: black;
-text-align:left;
-position:relative;
-letter-spacing: 1px;
-display:none;
-}
+ul#menu{display:table;table-layout: fixed;max-width: 1250px;margin: -55px 15px 0px 0px;padding: 0;width: calc(100% - 235px);float:right;font-family: "gotham", "ariel";font-weight: bold;font-size: 16px;font-weight:200;color: black;text-align:left;position:relative;letter-spacing: 1px;display:none;}
 }
 @media screen and (min-width: 1020px) {
   .mobilehamburgermenu{
     display:block;
     display:none;
+}
+div#footer{
+  margin-top:170px;
 }
 .logo{
   margin-left:70px;
@@ -33,6 +19,12 @@ a:visited {color: #6d6e71;text-decoration: none;}
 a:hover {color: #000000;}
 a:active {color: #000000;text-decoration: none;}
 
+div.container div#one,div.container div#two,div.container div#three,div.container div#fourfour{
+  display:block;
+}
+div#two{
+  height:auto;
+}
 .nospace{
   font-size:0px;
 }
@@ -95,7 +87,7 @@ h1#catchphrase{
   opacity:1 !important;
   color:white;
   z-index: 200;
-  font-family: helvetica;
+  font-family: gotham;
   font-size:4vw;
   letter-spacing: 5px; */
   margin-left:47vw;
@@ -103,16 +95,16 @@ h1#catchphrase{
 }
 
 #smalltext{
-font-family: helvetica;
+font-family: gotham;
 font-size:12px;
 }
 .mediumtext{
-font-family: helvetica;
+font-family: gotham;
 font-size:12px;
 font-weight:200;
 }
 #largetext{
-font-family: helvetica;
+font-family: gotham;
 font-size:18px;
 }
 ul#menu li{
@@ -126,7 +118,7 @@ z-index: 1000;
 ul#lowermenu{
 padding: 0;
 list-style: none;
-font-family: helvetica;
+font-family: gotham;
 font-size:12px;
 margin-right:auto;
 margin-left:auto;
@@ -167,7 +159,7 @@ background-color: #FFFFFF;
 
 #random-fullscreen-home{
 font-size:30px;
-font-family: "Helvetica", "ariel";
+font-family: "gotham", "ariel";
 }
 #random-fullscreen-home{
 border-style:solid;
@@ -190,7 +182,7 @@ padding-right:20px;
 }
 #leftmenu ul li {
 list-style-type: none;
-font-family:helvetica;
+font-family:gotham;
 text-align: right;
 font-size:26px;
 line-height: 40px;
@@ -199,7 +191,7 @@ margin-right:10px;
 }
 #bigabouttext{
   color:#000000;
-  font-family: helvetica;
+  font-family: gotham;
   font-size:35px;
   text-align: center;
   margin-bottom: 35px;
@@ -238,7 +230,7 @@ display:inline-block;
   margin-bottom:17px;
   display:block;
 font-size: 9px;
-font-family: helvetica;
+font-family: gotham;
 color:white;
 text-align:center;
 clear:both;
@@ -262,13 +254,13 @@ margin-bottom:0;
 #contact {
 margin-top:-40px;
 float:left;
-font-family: helvetica;
+font-family: gotham;
 font-size:12;
 z-index: 10;
 }
 #address{
 float:left;
-font-family: helvetica;
+font-family: gotham;
 font-size:12;
 }
 iframe#googlemap{
@@ -297,7 +289,7 @@ color:red;
 }
 .contactaddresstext{
   margin-top:0px;
-font-family:helvetica;
+font-family:gotham;
 font-size:12px;
 color:white;
 letter-spacing:2px;
@@ -306,7 +298,7 @@ letter-spacing:2.5px;
 font-weight: 600;
 position:relative;
 }
-.smalltext{margin-top:-10px;font-family:helvetica;font-size:12px;color:white;letter-spacing:2px;line-height: 27px;font-weight: light;display:inline-block;font-weight: 200;}
+.smalltext{margin-top:-10px;font-family:gotham;font-size:12px;color:white;letter-spacing:2px;line-height: 27px;font-weight: light;display:inline-block;font-weight: 200;}
 #mediumtext{}
 #smalltext{}
 
@@ -389,7 +381,7 @@ background-size: cover;
 text-align:center;
 }
 #events{
-font-family: helvetica;
+font-family: gotham;
 font-size:28px;
 height:100px;
 color:white;
@@ -448,17 +440,7 @@ padding-top:20px;
 text-align:center;
 margin-left:0;
 }
-#peoplebox{
-margin-top:20px;
-margin-bottom:50px;
-width:100%;
-margin-left: 0;
-margin-right: 0;
-position:relative;
-min-height: 315px;
-max-width: 1000px;
-padding-left:0px;
-}
+#peoplebox{/* margin-top:20px; *//* margin-bottom:50px; */width:100%;margin-left: 0;margin-right: 0;position:relative;min-height: 321px;max-width: 1000px;padding-bottom:10px;height:auto;}
 
 #hotelgrid{
   display:none!important;
@@ -506,21 +488,15 @@ font-size:40px;
 }
 
 #buttontext{
-font-family:'helvetica';
 font-size:20px !important;
 line-height:30px;
 }
 
-.backarrow{
-font-size:5px !important;
-padding:0px 10px 10px 0px;
-display: inline-block;
-vertical-align: middle;
-}
+.backarrow{font-size: 20px !important;padding: 0px 10px 3px 0px;display: inline-block;vertical-align: middle;}
 
 #hoteltitle{
   margin-bottom:50px;
-font-family: helvetica;
+font-family: gotham;
 margin-top:100px;
 font-size: 25px;
 letter-spacing: 4px;
@@ -628,7 +604,7 @@ margin-right:auto;
   text-align: center;
   margin-top:30px;
   font-size:14px;
-  font-family: helvetica;
+  font-family: gotham;
 }
 #text a{
   color:#414042;
@@ -661,7 +637,7 @@ margin-right:auto;
   text-align: center;
   margin-top:30px;
   font-size:14px;
-  font-family: helvetica;
+  font-family: gotham;
 }
 #activetext a{
   color:#FFF;
@@ -676,14 +652,13 @@ margin-right:auto;
   letter-spacing:2px;
 }
 
-#biggestdiv{
-}
+#biggestdiv{height: autp;/* height: 1000px; */}
 #mobilehoteltext{
   width:100%;
   text-align:center;
 line-height:100px;
 height:100px;
-font-family:helvetica;
+font-family:gotham;
 font-size:20px;
 letter-spacing:2px;
 color:#4d4d4f;
@@ -724,8 +699,8 @@ ul#lowermenu{
  color:black!important; 
 }
 .mobilehamburgermenu{
-  margin-top: 15px;
-  margin-right: 15px;
+  /* margin-top: 15px; */
+  /* margin-right: 15px; */
   display:block;
   float:right;
   height:30px;
@@ -778,7 +753,7 @@ ul#lowermenu{
   padding-top:1px;
 }
 .logo{
-  margin-left:15px;
+  /* margin-left:15px; */
 }
 .mobilehamburgermenu{
 }
@@ -787,8 +762,9 @@ ul#lowermenu{
   padding-right:15px;
 }
 .logo{
-  height:120px;
-  width:120px;
+  height: 60px;
+  width: 60px;
+  margin-left: 0px;
 }
 .hotellogo{
   width:29%;
@@ -811,7 +787,18 @@ ul#lowermenu{
 div#header{
   height:60px;
   background-color:#004363;
+
 }
+  .mobilehamburgermenu{
+    display:block;
+    height:30px;
+    width:30px;
+  }
+  button#trigger-overlay{
+   margin-top:15px; 
+   margin-bottom:0px;
+   margin-right:35px;
+  }
 }
 @media screen and (max-width: 533px) {
   #footer{

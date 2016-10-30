@@ -48,17 +48,28 @@ $( document ).ready(function() {
 
 
 <div id="biggestdiv">
-<a href="home.html"><img class="logo" src="img/PSH.svg"></a>
-<ul id="menu">
-  <li><a href="HOTELS.html"> HOTELS</a></li>
-  <li><a href="modstudios.html"> EXTENDED STAY</a></li>
-  <li><a href="tavern12.html"> TAVERN 12</a></li>
-  <li><a href="ABOUT.html"> ABOUT</a></li>
-</ul>
-
-<div id="eventsheader">
-<p id="events">FOUR POINTS</p>
-</div>
+ <div id="header">
+      <a href="home.html"><img class="logo" src="img/PSH.svg"></a>
+      <ul id="menu">
+        <li><a href="HOTELS.html"> HOTELS</a></li>
+        <li><a href="modstudios.html"> EXTENDED STAY</a></li>
+        <li><a href="tavern12.html"> TAVERN 12</a></li>
+        <li><a href="ABOUT.html"> ABOUT</a></li>
+      </ul>
+      <button id="trigger-overlay" class="whitetext smalltext quickfade" type="button">
+        <img class="mobilehamburgermenu" src="img/hamburgermenu.png">
+      </button>
+      <div class="overlay overlay-scale">
+        <button type="button" class="overlay-close fade">Close</button>
+        <div class="info">
+          <div id="hamdiv">
+            <a id="hammenu" class="blacktext quickfade" href="#graybox">ABOUT</a>
+            <a id="hammenu" class="blacktext quickfade" href="work.html">WORK</a>
+            <a id="hammenu" class="blacktext quickfade" href="#footer">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </div>
 <div  class="nospace" id="mobile"> 
 <img src="img/fourpoints/FourPoints2.jpg" />
 <img src="img/fourpoints/FourPoints3.jpg" />

@@ -33,7 +33,10 @@
   .logo{
   }
 }
-
+ul.navlist li:active{
+  color:white;
+  opacity:.6;
+}
 a:link {color: #6d6e71;text-decoration: none;}
 a:visited {color: #6d6e71;text-decoration: none;}
 a:active {color: #000000;text-decoration: none;}
@@ -193,7 +196,7 @@ ul#lowermenu a:hover{
 color:black;
 }
 
-#biggestdiv{width:100%;display:block;margin-right:auto;margin-left:auto;position:relative;min-height: 800px;}
+#biggestdiv{width:100%;display:block;margin-right:auto;margin-left:auto;position:relative;min-height: 800px;margin-top: 105Fpx;}
 
 #graybox{
 width:100%;
@@ -326,6 +329,7 @@ div#footer{
   clear:both;
   position:relative;
   padding-top:28px;
+  margin-top: 100px;
 }
 /*
 #one {
@@ -440,7 +444,7 @@ margin-top:0px;
 }
 
 #peopletextdiv{/* width: calc(100% - 320px); */height:auto;display:inline-block;/* margin-left:270px; */padding-top:0px;padding-right:10px;margin-top:0px;}
-#peoplebox{margin-top:20px;/* height: 114px!important; *//* margin-bottom:60px; */width:93%;margin-left: 0;margin-right: 0;position:relative;/* min-height: 315px; */height: 245px;padding-left:20px;max-width: 1000px;}
+#peoplebox{/* height: 114px!important; *//* margin-bottom:60px; */width:93%;margin-left: 0;margin-right: 0;position:relative;/* min-height: 315px; */height: 245px;padding-left:0px;max-width: 1000px;}
 
 .smallpiccontainer {
 display: flex;
@@ -510,17 +514,8 @@ display: inline-block;
 vertical-align: middle;
 }
 
-#hoteltitle{font-family: gotham;margin-top:100px;font-size: 28px;letter-spacing: 4px;line-height: 33px;margin-left:auto;margin-right:auto;margin-bottom:50px;width:90%;max-width:1190px;}
-#HotelText{
-font-size: 18px;
-letter-spacing: 2px;
-line-height: 26px;
-margin-left:auto;
-margin-right:auto;
-margin-bottom:100px;
-width:90%;
-max-width:1190px;
-}
+#hoteltitle{font-family: gotham;margin-top:100px;font-size: 42px;letter-spacing: 3px;line-height: 49px;margin-left:auto;margin-right:auto;margin-bottom: 25px;width:90%;max-width:1190px;color: #004363;}
+#HotelText{font-size: 18px;letter-spacing: 2px;line-height: 26px;margin-left:auto;margin-right:auto;margin-bottom: 31px;width:90%;max-width:1190px;}
 
 .buttondiv{
 width:90%;
@@ -528,6 +523,12 @@ max-width:1190px;
 margin-left:auto;
 margin-right:auto;
 margin-bottom:100px;
+}
+.upperbuttondiv{
+width:90%;
+max-width:1190px;
+margin-left:auto;
+margin-right:auto;
 }
 
 
@@ -763,13 +764,7 @@ ul#lowermenu li:last-child {
 .starwood{margin-top: 77.5px;}
 .marriot{margin-top: 67.25px;}
 .fourpoints{margin-top:74px;}
-.logo{
-width:175px;
-top:0px;
-margin-left:70px;
-position:absolute;
-z-index:500;
-}
+.logo{width:175px;top:0px;/* left: 0; */margin-left:70px;position:absolute;z-index:500;}
 .bartitle{
 padding-top:20px;
 padding-bottom:20px;
@@ -816,6 +811,8 @@ div#header{
 }
   .mobilehamburgermenu{
     display:block;
+    height:30px;
+    width:30px;
   }
   button#trigger-overlay{
   display:block;
@@ -827,6 +824,11 @@ div#header{
   /* top: 10px; */
   padding:0;
   /* margin-right:70px; */
-  /* margin-top:10px; */
+  margin-top:37.5px;
+  margin-right:70px;
+  margin-bottom:37.5px;
+}
+div#two.content{
+  height: 1096px;
 }  
 a#hammenu{display:block;margin-left:auto;color: white;text-align: center;font-family: gotham;font-size: 25px;line-height: 10vh;}
