@@ -89,21 +89,27 @@ navLinks.on('click', function (e) {
 });
 </script>
 <body>
-<title>PUGET SOUND HOSPITALITY GROUP</title>
- 
+<title> PUGET SOUND HOSPITALITY GROUP</title>
+<div id="header">
 <a href="home.html"><img class="logo" src="img/PSH.svg"></a>
 <ul id="menu">
-  <li><a href="HOTELS.html"> HOTELS</a></li>
+  <li><a href="hotels.html"> HOTELS</a></li>
   <li><a href="modstudios.html"> EXTENDED STAY</a></li>
   <li><a href="tavern12.html"> TAVERN 12</a></li>
   <li><a href="ABOUT.html"> ABOUT</a></li>
 </ul>
-
-  <div id="toolbar">
-  <div id="active"><p id="activetext"><a id="link" href="hotels.html">HOTELS</a></p>
-  </div><div id="four"><p id="text"><a id="link" href="housing.html">HOUSING</a></p>
-  </div><div id="four"><p id="text"><a id="link" href="restraunts.html">TAVERN 12</a></p>
-  </div><div id="four"><p id="text"><a id="link" href="about.html">ABOUT</a></p>
+            <button id="trigger-overlay" class="quickfade" type="button"><img class="mobilehamburgermenu" src="img/hamburgermenu.png"></button>
+      <div class="overlay overlay-scale">
+      <button type="button" class="overlay-close fade">Close</button>
+      <div class="info">
+        <div id="hamdiv">
+          <a id="hammenu" class="blacktext quickfade" href="#graybox">HOME</a>
+          <a id="hammenu" class="blacktext quickfade" href="work.html">HOTELS</a>
+          <a id="hammenu" class="blacktext quickfade" href="#footer">HOUSING</a>
+          <a id="hammenu" class="blacktext quickfade" href="#footer">TAVERN 12</a>
+          <a id="hammenu" class="blacktext quickfade" href="#footer">ABOUT</a>
+        </div>
+      </div>
   </div>
   </div>
   <div id="biggestdiv">
