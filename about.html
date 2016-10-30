@@ -5,7 +5,6 @@
   <style>
   #biggestdiv{
     overflow:auto;
-    margin-top:200px;
     }
     #biggestdiv{
     background-color: rgba(0, 67, 99, 0.5);
@@ -55,11 +54,12 @@ div#footer{
 </head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="js/jquery-1.12.0.js"></script>
-<script src="js/unslider-min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/mobilestyles.css">
 <script type="text/javascript" src="js/scripts.js"> </script>
 <link rel="stylesheet" href="css/unslider.css">
+<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/popupstyle.css">
 <script>
 $( document ).ready(function() {
     console.log( "ready!" );
@@ -89,7 +89,7 @@ navLinks.on('click', function (e) {
 });
 </script>
 <body>
-<title> PUGET SOUND HOSPITALITY GROUP</title>
+<title>PUGET SOUND HOSPITALITY GROUP</title>
 <div id="header">
 <a href="home.html"><img class="logo" src="img/PSH.svg"></a>
 <ul id="menu">
@@ -110,6 +110,13 @@ navLinks.on('click', function (e) {
           <a id="hammenu" class="blacktext quickfade" href="#footer">ABOUT</a>
         </div>
       </div>
+  </div>
+  </div>
+  <div id="toolbar">
+  <div id="active"><p id="activetext"><a id="link" href="hotels.html">HOTELS</a></p>
+  </div><div id="four"><p id="text"><a id="link" href="housing.html">HOUSING</a></p>
+  </div><div id="four"><p id="text"><a id="link" href="restraunts.html">TAVERN 12</a></p>
+  </div><div id="four"><p id="text"><a id="link" href="about.html">ABOUT</a></p>
   </div>
   </div>
   <div id="biggestdiv">
