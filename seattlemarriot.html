@@ -1,47 +1,21 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <style>
-.demo {
-width:100%;
-padding-bottom:20px;
-}
-ul.lSPager.lSGallery{
-  margin-left:auto!important;
-  margin-right:auto!important;
-
-}
-ul.lSPager.lSGallery{
-  width:auto!important;
-  max-width:735px!important;
-  margin-right:auto;
-  margin-left:auto;
-}
-ul.lSPager.lSGallery li{
-  max-width:100px;
-  max-height:100px;
-}
-ul.lSPager.lSGallery li:last-of-type{
-  margin-right:0px!important;
-}
-ul.lSPager.lSGallery li{
- width:55px!important;
-}
-</style>
-
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/mobilestyles.css">
 <link type="text/css" rel="stylesheet" href="css/lightslider2.css">
 <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 <link rel="stylesheet" href="css/popupstyle.css">
-</head>
 <script src="js/jquery-1.12.0.js"></script>
 <script src="js/lightslider.min.js"></script>
 <title> PUGET SOUND HOSPITALITY GROUP</title>
-
+  <style>
+ul.lSPager.lSGallery{
+  width:735!important;
+  max-width:820px!important;
+</style>
+</head>
     <script>
 $( document ).ready(function() {
   var slider =  $('#lightSlider2').lightSlider({
@@ -67,28 +41,28 @@ $( document ).ready(function() {
 
 <body>
   <div id="biggestdiv">
-    <div id="header">
-      <a href="home.html"><img class="logo" src="img/PSH.svg"></a>
-      <ul id="menu">
-        <li><a href="HOTELS.html"> HOTELS</a></li>
-        <li><a href="modstudios.html"> EXTENDED STAY</a></li>
-        <li><a href="tavern12.html"> TAVERN 12</a></li>
-        <li><a href="ABOUT.html"> ABOUT</a></li>
-      </ul>
-      <button id="trigger-overlay" class="whitetext smalltext quickfade" type="button">
-        <img class="mobilehamburgermenu" src="img/hamburgermenu.png">
-      </button>
+<div id="header">
+<a href="home.html"><img class="logo" src="img/PSH.svg"></a>
+<ul id="menu">
+  <li><a href="hotels.html"> HOTELS</a></li>
+  <li><a href="extendedstay.html"> EXTENDED STAY</a></li>
+  <li><a href="tavern12.html"> TAVERN 12</a></li>
+  <li><a href="about.html"> ABOUT</a></li>
+</ul>
+            <button id="trigger-overlay" class="quickfade" type="button"><img class="mobilehamburgermenu" src="img/hamburgermenu.png"></button>
       <div class="overlay overlay-scale">
-        <button type="button" class="overlay-close fade">Close</button>
-        <div class="info">
-          <div id="hamdiv">
-            <a id="hammenu" class="blacktext quickfade" href="#graybox">ABOUT</a>
-            <a id="hammenu" class="blacktext quickfade" href="work.html">WORK</a>
-            <a id="hammenu" class="blacktext quickfade" href="#footer">CONTACT</a>
-          </div>
+      <button type="button" class="overlay-close fade">Close</button>
+      <div class="info">
+        <div id="hamdiv">
+          <a id="hammenu" class="blacktext quickfade" href="home.html">HOME</a>
+          <a id="hammenu" class="blacktext quickfade" href="hotels.html">HOTELS</a>
+          <a id="hammenu" class="blacktext quickfade" href="extendedstay.html">EXTENDED STAY</a>
+          <a id="hammenu" class="blacktext quickfade" href="tavern12.html">TAVERN 12</a>
+          <a id="hammenu" class="blacktext quickfade" href="about.html">ABOUT</a>
         </div>
       </div>
-    </div>
+  </div>
+  </div>
     <div  class="nospace" id="mobile">
       <img src="img/residenceinn/residenceinn1.jpg"/>
       <img src="img/residenceinn/residenceinn2.jpg"/>
@@ -132,8 +106,8 @@ $( document ).ready(function() {
       </ul>
     </div>
     <div id="underhotel">
-      <p id="hoteltitle"> MARRIOT COURTYARD <br>
-      DOWNTOWN BELLEVUE</p>
+      <p id="hoteltitle">RESIDENCE INN<br>
+      UNIVERSIRY DISTRICT SEATTLE</p>
       <a href="hotels.html">
        <div class="upperbuttondiv">
             <p id="buttontext">
@@ -156,8 +130,8 @@ $( document ).ready(function() {
     <div id="footer">
       <div id="lowermenudiv">
         <ul id="lowermenu" class="">
-          <li> <a href="events.html"> <h3>EVENTS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
-          <li> <a href="eb5investors.html"> <h3>EB-5 INVESTORS</a></h3> </li>
+          <li> <a href="careers.html"> <h3>CAREERS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
+          <li> <a href="http://www.anwrc.com/"> <h3>EB-5 INVESTORS</a></h3> </li>
         </ul>
       </div>
       <HR id="footerhr" class="widthcap">
@@ -167,4 +141,5 @@ $( document ).ready(function() {
     </div>
     </div>
   </div>
+  <script src="js/index.js"></script>
 </body>

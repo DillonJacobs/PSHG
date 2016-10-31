@@ -4,18 +4,19 @@
 
 <head>
   <style>
-.demo {
-width:100%;
-padding-bottom:20px;
-}
-img {
-width:100%;
-}
-
+ul.lSPager.lSGallery{
+  width:820!important;
+  max-width:820px!important;
 </style>
 
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="js/jquery-1.12.0.js"></script>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/mobilestyles.css">
+<script type="text/javascript" src="js/scripts.js"> </script>
+<link rel="stylesheet" href="css/unslider.css">
+<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/popupstyle.css">
 <link type="text/css" rel="stylesheet" href="css/lightslider2.css">
 </head>
 <script src="js/jquery-1.12.0.js"></script>
@@ -48,14 +49,27 @@ $( document ).ready(function() {
 
 <div id="biggestdiv">
 <div id="header">
-<a href="home.html"><img class="logo" src="PSH.svg"></a>
+<a href="home.html"><img class="logo" src="img/PSH.svg"></a>
 <ul id="menu">
-  <li><a href="HOTELS.html"> HOTELS</a></li>
-  <li><a href="modstudios.html"> EXTENDED STAY</a></li>
+  <li><a href="hotels.html"> HOTELS</a></li>
+  <li><a href="extendedstay.html"> EXTENDED STAY</a></li>
   <li><a href="tavern12.html"> TAVERN 12</a></li>
-  <li><a href="ABOUT.html"> ABOUT</a></li>
+  <li><a href="about.html"> ABOUT</a></li>
 </ul>
-</div>
+            <button id="trigger-overlay" class="quickfade" type="button"><img class="mobilehamburgermenu" src="img/hamburgermenu.png"></button>
+      <div class="overlay overlay-scale">
+      <button type="button" class="overlay-close fade">Close</button>
+      <div class="info">
+        <div id="hamdiv">
+          <a id="hammenu" class="blacktext quickfade" href="home.html">HOME</a>
+          <a id="hammenu" class="blacktext quickfade" href="hotels.html">HOTELS</a>
+          <a id="hammenu" class="blacktext quickfade" href="extendedstay.html">EXTENDED STAY</a>
+          <a id="hammenu" class="blacktext quickfade" href="tavern12.html">TAVERN 12</a>
+          <a id="hammenu" class="blacktext quickfade" href="about.html">ABOUT</a>
+        </div>
+      </div>
+  </div>
+  </div>
 <div  class="nospace" id="mobile">
 <img src="img/hamptoninntacoma/hamptontacoma0.jpg" />
 <img src="img/hamptoninntacoma/hamptontacoma1.jpg" />
@@ -73,7 +87,7 @@ $( document ).ready(function() {
         <li data-thumb="img/hamptoninntacoma/hamptontacomathumb1.jpg">
             <img src="img/hamptoninntacoma/hamptontacoma1.jpg" />
         </li>
-        <li data-thumb="img/fourpoints/FourPointsimg/HamInnTacomaThumb02.jpg">
+        <li data-thumb="img/hamptoninntacoma/hamptontacomathumb2.jpg">
                 <img src="img/hamptoninntacoma/hamptontacoma2.jpg" />
         </li>
         <li data-thumb="img/hamptoninntacoma/hamptontacomathumb3.jpg">
@@ -103,7 +117,11 @@ $( document ).ready(function() {
 <div id="underhotel">
 <p id="hoteltitle"> HAMPTON INN AND SUITES <br>
 TACOMA</p>
-
+<div class="upperbuttondiv">
+            <p id="buttontext">
+              BOOK NOW <span class="backarrow">></span>
+            </p>
+          </div>
 <p id="HotelText">
 
 Stay in the Hampton Inn & Suites Tacoma-Mall hotel, enveloped by everything we love - including a grand view of Mt. Rainier. Treat yourself to an upscale shopping and dining experience at Tacoma Mallor Lakewood Towne Center. Enjoy a concert at the Tacoma Dome, experience unique attractions like Northwest Trek Wild Life Park, the Museum of Glass and the LeMay Car Museum or take the children to experience the zoo and aquarium at Point Defiance Park. Play a few relaxed games of golf at Chamber's Bay Golf Club.
@@ -119,29 +137,19 @@ Visiting for business? We're centrally located near Boeing, General Dynamics, In
 </a>
 </p>
 </div>
-
-<div id="graybox"> </div>
-
 <div id="footer">
-
-<div id="footer">
-<div id="lowermenudiv">
-<ul id="lowermenu" class="">
-<li> <a href="events.html"> <h3>EVENTS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
-<li> <a href="press.html"> <h3>PRESS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
-<li> <a href="careers.html"> <h3>CAREERS</a>&nbsp;&nbsp;&nbsp;/</h3> </li>
-<li> <a href="eb5investors.html"> <h3>EB-5 INVESTORS</a></h3> </li>
-</ul>
-</div>
-<HR id="footerhr" class="widthcap">
-<p id="footertxt" class="widthcap">
-<span id="footertxt">
- C. PUGET SOUND HOSPITALITY GROUP 2015</br>
-    SITE BY NEARABOUT CREATIVE
-
-</span>
-</p>
-</div>
-
-</div>
-</div>
+      <div id="lowermenudiv">
+        <ul id="lowermenu" class="">
+          <li> <a href="careers.html"> <h3>CAREERS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
+          <li> <a href="http://www.anwrc.com/"> <h3>EB-5 INVESTORS</a></h3> </li>
+        </ul>
+      </div>
+      <HR id="footerhr" class="widthcap">
+      <p id="footertxt" class="widthcap">
+        <span id="footertxt">C. PUGET SOUND HOSPITALITY GROUP 2015</br>SITE BY NEARABOUT CREATIVE</span>
+      </p>
+    </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>

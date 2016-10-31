@@ -20,6 +20,17 @@ a:active {color: #000000;text-decoration: none;}
 div.container div#one,div.container div#two,div.container div#three,div.container div#fourfour{
   display:block;
 }
+#graybox{
+margin-top:0px;
+}
+.abouttitle{
+  display:block;
+}
+#careerstitle{
+  text-align:left;
+}
+.bartitle{text-align:left;}
+div
 div#two{/* height:auto; */}
 .nospace{
   font-size:0px;
@@ -297,6 +308,7 @@ position:relative;
 
 
 #footer{
+  bottom: 0px;
   padding-bottom:7px;
   clear:both;
   background-color: #4D4D4F;
@@ -544,11 +556,10 @@ margin-right:auto;
 #careerstitle{
   margin-top:90px;
   margin-bottom:40px;
-  text-align:center;
+  margin-left:30px;
+  text-align:left;
   line-height: 40px;
-  width:90%;
-  margin-left:auto;
-  margin-right:auto;
+  width:auto;
   letter-spacing:2px;
 }
 
@@ -678,11 +689,11 @@ ul#lowermenu{
 #footerhr{
   margin-top: 40px;
 }
-#eventsheader{
-  background-color:transparent;
-}
 .bartitle{
- color:black!important; 
+ color:white!important; 
+ text-align:center;
+ height:60px;
+ line-height:140px;
 }
 .mobilehamburgermenu{
   /* margin-top: 15px; */
@@ -700,9 +711,32 @@ ul#lowermenu{
   }
 }
 @media screen and (max-width: 750px) {
+  .availablepositions{
+      width:auto;
+      text-align:left;
+      margin-left:30px;
+      display: block;
+      text-decoration: underline;
+    }
+    #careers{
+      text-align:left;
+    }
   .fixer{
     padding-left:15px;
     padding-right:15px;
+  }
+  #eventsheader{
+    background-color:transparent;
+    height:50px;
+  }
+  .bartitle{
+    color:black!important;
+    text-align:left;
+    font-size:20px;
+    margin-left:30px;
+  }
+  #careerstitle{
+    margin-top:30px;
   }
   .col-33{
     width:50%;
@@ -781,7 +815,7 @@ div#header{
     width:30px;
   }
   button#trigger-overlay{
-   margin-top:15px; 
+   margin-top:10px; 
    margin-bottom:0px;
    margin-right:35px;
   }

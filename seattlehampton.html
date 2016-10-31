@@ -5,15 +5,9 @@
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
-.demo {
-width:100%;
-padding-bottom:20px;
-}
 ul.lSPager.lSGallery{
-  margin-left:auto!important;
-  margin-right:auto!important;
-
-}
+  width:auto!important;
+  max-width:735px!important;
 </style>
 
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -51,29 +45,30 @@ $( document ).ready(function() {
 
 
 <body>
-  <div id="biggestdiv">
-    <div id="header">
-      <a href="home.html"><img class="logo" src="img/PSH.svg"></a>
-      <ul id="menu">
-        <li><a href="HOTELS.html"> HOTELS</a></li>
-        <li><a href="modstudios.html"> EXTENDED STAY</a></li>
-        <li><a href="tavern12.html"> TAVERN 12</a></li>
-        <li><a href="ABOUT.html"> ABOUT</a></li>
-      </ul>
-      <button id="trigger-overlay" class="whitetext smalltext quickfade" type="button">
-        <img class="mobilehamburgermenu" src="img/hamburgermenu.png">
-      </button>
+<title>PUGET SOUND HOSPITALITY</title>
+<div id="biggestdiv">
+<div id="header">
+<a href="home.html"><img class="logo" src="img/PSH.svg"></a>
+<ul id="menu">
+  <li><a href="hotels.html"> HOTELS</a></li>
+  <li><a href="extendedstay.html"> EXTENDED STAY</a></li>
+  <li><a href="tavern12.html"> TAVERN 12</a></li>
+  <li><a href="about.html"> ABOUT</a></li>
+</ul>
+            <button id="trigger-overlay" class="quickfade" type="button"><img class="mobilehamburgermenu" src="img/hamburgermenu.png"></button>
       <div class="overlay overlay-scale">
-        <button type="button" class="overlay-close fade">Close</button>
-        <div class="info">
-          <div id="hamdiv">
-            <a id="hammenu" class="blacktext quickfade" href="#graybox">ABOUT</a>
-            <a id="hammenu" class="blacktext quickfade" href="work.html">WORK</a>
-            <a id="hammenu" class="blacktext quickfade" href="#footer">CONTACT</a>
-          </div>
+      <button type="button" class="overlay-close fade">Close</button>
+      <div class="info">
+        <div id="hamdiv">
+          <a id="hammenu" class="blacktext quickfade" href="home.html">HOME</a>
+          <a id="hammenu" class="blacktext quickfade" href="hotels.html">HOTELS</a>
+          <a id="hammenu" class="blacktext quickfade" href="extendedstay.html">EXTENDED STAY</a>
+          <a id="hammenu" class="blacktext quickfade" href="tavern12.html">TAVERN 12</a>
+          <a id="hammenu" class="blacktext quickfade" href="about.html">ABOUT</a>
         </div>
       </div>
-    </div>
+  </div>
+  </div>
 <div  class="nospace" id="mobile">
 <img src="img/hamptoninnseattle/hamptonseattle1.jpg" />
 <img src="img/hamptoninnseattle/hamptonseattle2.jpg" />
@@ -90,35 +85,32 @@ $( document ).ready(function() {
 <div class="demo">
     <ul id="lightSlider2">
 
-        <li data-thumb="img/HamptonInnSeattleThumb01.jpg">
+        <li data-thumb="img/hamptoninnseattle/hamptonseattlethumb1.jpg">
             <img src="img/hamptoninnseattle/hamptonseattle1.jpg" />
         </li>
-        <li data-thumb="img/HamptonInnSeattleThumb02.jpg">
-            <img src="img/hamptoninnseattle/hamptonseattle2.jpg" />
+        <li data-thumb="img/hamptoninnseattle/hamptonseattlethumb2.jpg">
+            <img src="img/hamptoninnseattle/hamptonseattlethumb2.jpg" />
         </li>
-        <li data-thumb="img/HamptonInnSeattleThumb03.jpg">
+        <li data-thumb="img/hamptoninnseattle/hamptonseattlethumb3.jpg">
                 <img src="img/hamptoninnseattle/hamptonseattle3.jpg" />
         </li>
-        <li data-thumb="img/HamptonInnSeattleThumb04.jpg">
+        <li data-thumb="img/hamptoninnseattle/hamptonseattlethumb4.jpg">
               <img src="img/hamptoninnseattle/hamptonseattle4.jpg" />
         </li>
-        <li data-thumb="img/HamptonInnSeattleThumb05.jpg">
+        <li data-thumb="img/hamptoninnseattle/hamptonseattlethumb5.jpg">
                 <img src="img/hamptoninnseattle/hamptonseattle5.jpg" />
         </li>
-        <li data-thumb="img/HamptonInnSeattleThumb06.jpg">
+        <li data-thumb="img/hamptoninnseattle/hamptonseattlethumb6.jpg">
                 <img src="img/hamptoninnseattle/hamptonseattle6.jpg" />
         </li>
-        <li data-thumb="img/HamptonInnSeattleThumb07.jpg">
+        <li data-thumb="img/hamptoninnseattle/hamptonseattlethumb7.jpg">
                 <img src="img/hamptoninnseattle/hamptonseattle7.jpg" />
         </li>
-        <li data-thumb="img/HamptonInnSeattleThumb08.jpg">
+        <li data-thumb="img/hamptoninnseattle/hamptonseattlethumb8.jpg">
               <img src="img/hamptoninnseattle/hamptonseattle8.jpg" />
         </li>
-        <li data-thumb="img/HamptonInnSeattleThumb09.jpg">
+        <li data-thumb="img/hamptoninnseattle/hamptonseattlethumb9.jpg">
                 <img src="img/hamptoninnseattle/hamptonseattle9.jpg" />
-        </li>
-        <li data-thumb="img/HamptonInnSeattleThumb10.jpg">
-                <img src="img/hamptoninnseattle/hamptonseattle10.jpg" />
         </li>
     </ul>
 </div>
@@ -126,7 +118,11 @@ $( document ).ready(function() {
 <div id="underhotel">
 <p id="hoteltitle"> <span class="bluecolor">HAMPTON INN AND SUITES</span> <br>
 DOWNTOWN SEATTLE</p>
-
+    <div class="upperbuttondiv">
+            <p id="buttontext">
+              BOOK NOW <span class="backarrow">></span>
+            </p>
+          </div>
 <p id="HotelText">
 Discover a warm welcome in the heart of central Seattle at Hampton Inn & Suites Seattle-Downtown. Set in the midst of the Emerald City action, this downtown Seattle hotel is within half a mile of Seattle's world-famous Space Needle and only a few blocks from Lake Union's waterfront attractions. Hampton Inn & Suites Seattle-Downtown is designed to accommodate short-term and extended stay travel. With a great base to indulge sporting and cultural passions – this downtown Seattle hotel is less than ten minutes from the Seattle Mariners' Safeco Field, the Seattle Seahawks CenturyLink Field, and the frequent Broadway shows at 5th Avenue.
 <br><br>
@@ -141,29 +137,19 @@ Hampton Inn & Suites Seattle-Downtown is convenient for both extended stay busin
 </a>
 </p>
 </div>
-
-<div id="graybox"> </div>
-
 <div id="footer">
-<div id="lowermenudiv">
-<ul id="lowermenu" class="">
-<li> <a href="events.html"> <h3>EVENTS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
-<li> <a href="press.html"> <h3>PRESS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
-<li> <a href="careers.html"> <h3>CAREERS</a>&nbsp;&nbsp;&nbsp;/</h3> </li>
-<li> <a href="eb5investors.html"> <h3>EB-5 INVESTORS</a></h3> </li>
-</ul>
-</div>
-<HR id="footerhr" class="widthcap">
-<p id="footertxt" class="widthcap">
-<span id="footertxt">
- C. PUGET SOUND HOSPITALITY GROUP 2015</br>
-    SITE BY NEARABOUT CREATIVE
-
-</span>
-</p>
-</div>
-
-</div>
-</div>
+      <div id="lowermenudiv">
+        <ul id="lowermenu" class="">
+          <li> <a href="careers.html"> <h3>CAREERS</a>&nbsp;&nbsp;&nbsp;/</h3>  </li>
+          <li> <a href="http://www.anwrc.com/"> <h3>EB-5 INVESTORS</a></h3> </li>
+        </ul>
+      </div>
+      <HR id="footerhr" class="widthcap">
+      <p id="footertxt" class="widthcap">
+        <span id="footertxt">C. PUGET SOUND HOSPITALITY GROUP 2015</br>SITE BY NEARABOUT CREATIVE</span>
+      </p>
+    </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
 </body>
-</html>
