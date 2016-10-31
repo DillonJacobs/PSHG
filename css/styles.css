@@ -865,3 +865,7 @@ ul.lSPager.lSGallery li:last-of-type{
 ul.lSPager.lSGallery li{
  width:55px!important;
 }
+
+div#hamdiv{
+  margin-top:100px;
+}
