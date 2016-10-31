@@ -831,4 +831,41 @@ div#header{
 div#two.content{
   height: 1096px;
 }  
-a#hammenu{display:block;margin-left:auto;color: white;text-align: center;font-family: gotham;font-size: 25px;line-height: 10vh;}
+a#hammenu{
+  display:block;
+  margin-left:auto;
+  color: white;
+  text-align: center;
+  font-family: gotham;
+  font-size: 25px;
+  line-height: 10vh;}
+
+.demo {
+width:100%;
+padding-bottom:20px;
+}
+ul.lSPager.lSGallery{
+  margin-left:auto!important;
+  margin-right:auto!important;
+
+}
+ul.lSPager.lSGallery{
+  width:auto!important;
+  max-width:735px!important;
+  margin-right:auto;
+  margin-left:auto;
+}
+ul.lSPager.lSGallery li{
+  max-width:100px;
+  max-height:100px;
+}
+ul.lSPager.lSGallery li:last-of-type{
+  margin-right:0px!important;
+}
+ul.lSPager.lSGallery li{
+ width:55px!important;
+}
+
+div#hamdiv{
+  margin-top:100px;
+}
