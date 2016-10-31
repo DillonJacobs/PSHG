@@ -20,9 +20,7 @@ a:active {color: #000000;text-decoration: none;}
 div.container div#one,div.container div#two,div.container div#three,div.container div#fourfour{
   display:block;
 }
-div#two{
-  height:auto;
-}
+div#two{/* height:auto; */}
 .nospace{
   font-size:0px;
 }
@@ -191,7 +189,7 @@ margin-right:10px;
   color:#000000;
   font-family: gotham;
   font-size:35px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 35px;
   /* padding-bottom:8px; */
   height:40px;
@@ -203,11 +201,8 @@ margin-right:10px;
   margin-right:auto;
   margin-left:auto;
 }
-.tallerbigabouttext{
-  height:80px!important;
-}
 #abouttext{
-  text-align:center;
+  text-align: left;
   padding-left:0px;
 }
 #people{
@@ -430,14 +425,7 @@ display:block;
 
 }
 
-#peopletextdiv{
-width: 100%;
-height:auto;
-display:block;
-padding-top:20px;
-text-align:center;
-margin-left:0;
-}
+#peopletextdiv{width: 100%;height:auto;display:block;padding-top:20px;text-align: left;margin-left:0;padding-left: 0px;}
 #peoplebox{/* margin-top:20px; *//* margin-bottom:50px; */width:100%;margin-left: 0;margin-right: 0;position:relative;min-height: 321px;max-width: 1000px;padding-bottom:10px;height:auto;}
 
 #hotelgrid{
