@@ -61,6 +61,11 @@
     margin-top:0px;
   }
 }
+@media screen and (min-width: 750px) {
+  p.availablepositions{
+    text-align:center;
+  }
+}
 
  @media screen and (max-width: 900px) {
   div#mobile{
@@ -607,9 +612,9 @@ margin-right:auto;
 #careerstitle{
   margin-top:90px;
   margin-bottom:40px;
-  text-align:left;
+  text-align:center;
   line-height: 40px;
-  width:600px;
+  width:auto;
   margin-left:auto;
   margin-right:auto;
   letter-spacing:2px;
