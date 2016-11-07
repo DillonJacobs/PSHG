@@ -6,6 +6,12 @@
     font-family: gotham book;
     src: url(../gotham-book.ttf);
 }
+  @font-face {
+    font-family: gotham;
+    src: url(../GOTHAM-BOLD.TTF);
+}
+
+
 :focus{
   outline:none;
   }
@@ -209,7 +215,25 @@ font-weight:200;
 font-family: gotham;
 font-size:18px;
 }
-ul#menu{display:table;table-layout: fixed;max-width: 1250px;padding: 0;float:right;font-family: "gotham bold";font-size: 14px;font-weight:400;color: black;text-align:left;position:relative;letter-spacing: 1px;margin-top: 46px;margin-bottom: 46px;margin-right:70px;}
+
+ul#menu{
+  display:table;
+  table-layout: fixed;
+  max-width: 1250px;
+  padding: 0;
+  float:right;
+  font-family: "gotham bold";
+  font-size: 14px;
+  font-weight:400;
+  color: black;
+  text-align:left;
+  position:relative;
+  letter-spacing: 1px;
+  margin-top: 46px;
+  margin-bottom: 46px;
+  margin-right:70px;
+}
+
 ul#menu li{
 list-style-type: none;
 display:table-cell;
