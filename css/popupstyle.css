@@ -13,11 +13,11 @@
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-	width: 80px;
-	height: 80px;
+	width: 24px;
+	height: 24px;
 	position: absolute;
-	right: 20px;
-	top: 20px;
+	right: 50px;
+	top: 50px;
 	overflow: hidden;
 	border: none;
 	background: url(../img/exitbutton2.png) no-repeat center center;
@@ -26,7 +26,8 @@
 	z-index: 10000;
 }
 .overlay-close:hover {
-	opacity:.5
+	opacity:.5;
+	cursor: pointer;
 }
 /* Effects */
 .overlay-scale {

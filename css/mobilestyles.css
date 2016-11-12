@@ -1,5 +1,5 @@
 @media screen and (max-width: 1020px) {
-ul#menu{display:table;table-layout: fixed;max-width: 1250px;margin: -55px 15px 0px 0px;padding: 0;width: calc(100% - 235px);float:right;font-family: "gotham", "ariel";font-weight: bold;font-size: 16px;font-weight:200;color: black;text-align:left;position:relative;letter-spacing: 1px;display:none;}
+ul#menu{display:table;table-layout: fixed;max-width: 1250px;margin: -55px 15px 0px 0px;padding: 0;width: calc(100% - 235px);float:right;font-family: gotham;font-weight: bold;font-size: 16px;font-weight:200;color: black;text-align:left;position:relative;letter-spacing: 1px;display:none;}
 }
 
 @media screen and (min-width: 1020px) {
@@ -22,20 +22,13 @@ ul#menu{display:table;table-layout: fixed;max-width: 1250px;margin: -55px 15px 0
     p#peopletextdiv.bodytext{
       text-align:center;
     }
-    #careerstitle{
-  margin-top:90px;
-  margin-bottom:40px;
-  margin-left:20px;
-  margin-right:20px;
-  text-align:left;
-  line-height: 40px;
-  width:auto;
-  letter-spacing:2px;
-}
+    div.container{
+      margin-top:120px;
+    }
 }
 @media screen and (max-width: 900px) {
 a:link {color: #6d6e71;text-decoration: none;}
-a:visited {color: #6d6e71;text-decoration: none;}
+a:visited {color: black;text-decoration: none;}
 a:hover {color: #000000;}
 a:active {color: #000000;text-decoration: none;}
 
@@ -47,9 +40,6 @@ margin-top:0px;
 }
 .abouttitle{
   display:block;
-}
-#careerstitle{
-  text-align:center;
 }
 .bartitle{text-align:left;}
 div
@@ -160,18 +150,11 @@ letter-spacing: 2px;
 width:auto;
 }
 
-ul#lowermenu li {
-padding-left:10px;
-paddin relative */g-right:10px;
-display:inline-block;
-}
+ul#lowermenu li {/* padding-left:10px; */paddin relative */g-right:10px;display:inline-block;}
 ul#lowermenu a{
 color:white;
 }
 
-ul#lowermenu a:hover{
-color:black;
-}
 
 #biggestdiv{
 width:100%;
@@ -188,7 +171,7 @@ background-color: #FFFFFF;
 
 #random-fullscreen-home{
 font-size:30px;
-font-family: "gotham", "ariel";
+font-family: gotham;
 }
 #random-fullscreen-home{
 border-style:solid;
@@ -221,9 +204,9 @@ margin-right:10px;
 #bigabouttext{
   color:#000000;
   font-family: gotham;
-  font-size:35px;
+  font-size: 30px;
   text-align: left;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
   /* padding-bottom:8px; */
   height:40px;
   font-weight:550;
@@ -459,7 +442,7 @@ display:block;
 
 }
 
-#peopletextdiv{width: 100%;height:auto;display:block;padding-top:20px;text-align: left;margin-left:0;padding-left: 0px;}
+#peopletextdiv{width: 100%;height:auto;display:block;/* padding-top:20px; */text-align: left;margin-left:0;padding-left: 0px;}
 #peoplebox{/* margin-top:20px; *//* margin-bottom:50px; */width:100%;margin-left: 0;margin-right: 0;position:relative;min-height: 321px;max-width: 1000px;padding-bottom:10px;height:auto;}
 
 #hotelgrid{
@@ -527,14 +510,15 @@ width:90%;
 max-width:1360px;
 }
 #HotelText{
-  margin-bottom:100px;
-font-size: 18px;
-letter-spacing: 2px;
-line-height: 26px;
-margin-left:auto;
-margin-right:auto;
-width:90%;
-max-width:1360px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 26px;
+  margin-left:auto;
+  margin-right:auto;
+  width:90%;
+  max-width:1360px;
+  color: black;
 }
 
 .buttondiv{
@@ -560,9 +544,17 @@ height:500px;
 
 #lowermenu h3{
 color:white;
+opacity:1;
 font-weight: 500;
+ -o-transition:.25s;
+ -ms-transition:.25s;
+ -moz-transition:.25s;
+ -webkit-transition:.25s;
+ transition:.25s;
 }
-
+#lowermenu h3:hover{
+opacity:.6;
+}
 .content-container{
 margin-left:auto;
 margin-right:auto;
@@ -578,7 +570,10 @@ margin-right:auto;
 
 
 #careershr{
-  width:90%;
+  width:auto;
+  margin-right:20px;
+  margin-left:20px;
+  box-sizing: border-box;
 }
 #article{
   text-decoration: underline;
@@ -732,6 +727,11 @@ ul#lowermenu{
       display: block;
       text-decoration: underline;
     }
+    #careerstitle{
+  text-align:left;
+  margin-right:20px;
+  margin-left:20px;
+}
     #careers{
       text-align:left;
       margin-left:20px;
@@ -797,8 +797,8 @@ ul#lowermenu{
   padding-right:15px;
 }
 .logo{
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   margin-left: 0px;
 }
 .hotellogo{
@@ -820,9 +820,8 @@ ul#lowermenu{
  background-color:transparent; 
 }
 div#header{
-  height:60px;
+  height: 70px;
   background-color:#004363;
-
 }
   .mobilehamburgermenu{
     display:block;
@@ -830,7 +829,7 @@ div#header{
     width:30px;
   }
   button#trigger-overlay{
-   margin-top:15px; 
+   margin-top: 20px;
    margin-bottom:0px;
    margin-right:35px;
   }
