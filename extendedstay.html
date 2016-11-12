@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="js/jquery-1.12.0.js"></script>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -21,10 +21,25 @@ div#footer{
   position:fixed;
   bottom:0px;
 }
-body{
-  background-color: rgba(0, 67, 99, 0.5);
+div#bluebox{
+      background-color: rgba(0, 67, 99, 0.5);
+      height:auto;
+      display:block;
+      padding-top:200px;
+      padding-bottom:400px;
 }
 </style>
+<script>
+$( document ).ready(function() {
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+});
+</script>
  <body>
 <title> PUGET SOUND HOSPITALITY GROUP</title>
 <div id="header">
@@ -49,9 +64,11 @@ body{
       </div>
   </div>
   </div>
+  <div id="bluebox">
   <p class="comingsoon">
   COMING SOON
   </p>
+  </div>
   <div id="footer">
 <div id="lowermenudiv">
 <ul id="lowermenu" class="">

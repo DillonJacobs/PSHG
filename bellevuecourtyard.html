@@ -2,7 +2,7 @@
 <html>
 
 <head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <style>
 
@@ -37,7 +37,7 @@ $( document ).ready(function() {
     }
 
 });
-
+$("a[href*='" + location.pathname + "']").addClass("current");
 
   });
 </script>
@@ -50,10 +50,10 @@ $( document ).ready(function() {
 <div id="header">
 <a href="home.html"><img class="logo" src="img/PSH.svg"></a>
 <ul id="menu">
-  <li><a href="hotels.html"> HOTELS</a></li>
-  <li><a href="extendedstay.html"> EXTENDED STAY</a></li>
-  <li><a href="tavern12.html"> TAVERN 12</a></li>
-  <li><a href="about.html"> ABOUT</a></li>
+  <li><a class="current" href="hotels.html"> HOTELS</a></li>
+  <li><a class="current" href="extendedstay.html"> EXTENDED STAY</a></li>
+  <li><a class="current" href="tavern12.html"> TAVERN 12</a></li>
+  <li><a class="current" href="about.html"> ABOUT</a></li>
 </ul>
             <button id="trigger-overlay" class="quickfade" type="button"><img class="mobilehamburgermenu" src="img/hamburgermenu.png"></button>
       <div class="overlay overlay-scale">

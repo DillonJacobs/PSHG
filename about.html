@@ -2,6 +2,8 @@
 <html>
 
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <style>
   #biggestdiv{
     overflow:auto;
@@ -59,7 +61,6 @@ div#two{
 .container{
   margin-top:80px;
 }
-
     </style>
 </head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -96,6 +97,13 @@ navLinks.on('click', function (e) {
             $('#fourfour').fadeIn("slow");
           break;
     }
+});
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
 });
 });
 </script>
@@ -160,7 +168,7 @@ Over the next five years we will be expanding our portfolio to include additiona
 
 <div id="peoplebox">
  <!--<div id="imgplaceholder"></div>-->
-<p class="bodytext last" id="peopletextdiv">Julie Mackey<br>Regional Direction of Sales<br><br> Julie is a graduate of the University of Oregon with a BS in communications. A senior hospitality executive with more than 28 years of experience, Julie has extensive knowledge in sales & account management as well as operations. Prior to joining the company, Julie had acquired extensive hospitality experience in roles such as General Manager and Director of Sales & Marketing within various brands, including Hilton, Embassy Suites, Homewood Suites and Destination Hotels & Resort. She also has eleven years of experience within Marriott International, working in various sales leadership roles. Julie lives in Redmond, Washington with her husband and son. 
+<p class="bodytext last" id="peopletextdiv">Julie Mackey<br>Regional Direction of Sales<br><br> Julie is a graduate of the University of Oregon with a BS in communications. A senior hospitality executive with more than 28 years of experience, Julie has extensive knowledge in sales & account management as well as operations. Prior to joining the company, Julie had acquired extensive hospitality experience in roles such as General Manager and Director of Sales & Marketing within various brands, including Hilton, Embassy Suites, Homewood Suites and Destination Hotels & Resort. She also has 11 years of experience within Marriott International, working in various sales leadership roles. Julie lives in Redmond, Washington with her husband and son. 
 </p>
 </div>
 </div>

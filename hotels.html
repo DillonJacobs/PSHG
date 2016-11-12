@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="js/jquery-1.12.0.js"></script>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -177,6 +178,17 @@ div.image{
 }
 }
     </style>
+    <script>
+$( document ).ready(function() {
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+});
+</script>
 </head>
 
 <body>
@@ -225,7 +237,7 @@ div.image{
     <a href="seattlefourpoints.html">
     <div class="image"  id="four">
       <div id="overlay"></div>
-      <p class="hotelname">SEATTLE FOUR POINTS BY SHARATON</p>
+      <p class="hotelname">SEATTLE FOUR POINTS BY SHERATON</p>
     </div>
   </a>
     <a href="tacomahampton.html">

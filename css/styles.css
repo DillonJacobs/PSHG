@@ -1,5 +1,5 @@
   @font-face {
-    font-family: gothamlight;
+      font-family: gothamlight;
     src: url(../GOTHAM-LIGHT.TTF);
 }
   @font-face {
@@ -944,4 +944,7 @@ opacity:.4;
   ul#menu li a:hover{
     opacity:.6;
   }
-  }
+  
+  a.current{
+text-decoration:underline!important;
+}
